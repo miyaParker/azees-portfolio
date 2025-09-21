@@ -86,6 +86,9 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   background: #ffffff;
   color: var(--foreground);

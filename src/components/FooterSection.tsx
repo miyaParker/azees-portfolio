@@ -23,7 +23,7 @@ const FooterSection = () => {
       {/* </div> */}
 
       {/* Main Footer Content */}
-        <div className="border-b border-gray-600 py-12 max-w-[1513px] w-full mx-auto px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px]">
+        <div id="footer" className="border-b border-gray-600 py-12 max-w-[1513px] w-full mx-auto px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px]">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
             {/* Left Column - Branding and Social Media */}
             <motion.div

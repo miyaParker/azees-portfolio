@@ -7,10 +7,11 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import ClientsSection from '@/components/ClientsSection';
 import MovingWorkSection from '@/components/MovingWorkSection';
 import FooterSection from '@/components/FooterSection';
-
+import Navbar from '@/components/Navbar';
 export default function Home() {
   return (
     <>
+    <Navbar variant="dark" isAbsolute={false} currentPage="home" />
       <HeroSection />
       <ServicesSection />
       <WorkExperienceSection />

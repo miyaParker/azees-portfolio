@@ -6,7 +6,7 @@ import CascadedCard from './CascadedCard';
 
 const ServicesSection = () => {
   return (
-    <section className="py-[60px] md:py-[100px] w-full mx-auto px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] bg-gray-900 relative h-max">
+    <section id="services" className="py-[60px] md:py-[100px] w-full mx-auto px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] bg-gray-900 relative h-max">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>

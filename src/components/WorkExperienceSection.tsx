@@ -47,7 +47,7 @@ const WorkExperienceSection = () => {
   ];
 
   return (
-    <section className="w-full max-w-[1513px] mx-auto py-20 px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] bg-white relative overflow-hidden">
+    <section id="resume" className="w-full max-w-[1513px] mx-auto py-20 px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] bg-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>

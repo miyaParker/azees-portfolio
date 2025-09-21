@@ -8,12 +8,12 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <div className="h-screen md:max-h-[750px] lg:max-h-[945px] bg-white max-w-[1440px] mx-auto relative">
+    <div className="pt-[80px] md:pt-[120px] h-screen md:max-h-[750px] lg:max-h-[945px] bg-white max-w-[1440px] mx-auto relative">
       {/* Header Navigation */}
-      <Navbar variant="dark" isAbsolute={false} currentPage="home" />
+      
 
       {/* Main Hero Content */}
-      <div className="h-max w-full flex flex-col md:flex-row items-start px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] lg:pt-16 pb-28 lg:pb-32 relative">
+      <div id="about-me" className="h-max w-full flex flex-col md:flex-row items-start px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] lg:pt-16 pb-28 lg:pb-32 relative">
         {/* Left Side - Text Content */}
         <motion.div
           className="w-full md:w-[70%] text-center lg:text-center pt-4 lg:pt-8 "

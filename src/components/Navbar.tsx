@@ -16,19 +16,19 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   const navClasses = isDark 
-    ? "bg-gray-900 border border-gray-600 rounded-full px-[18px] h-[70px] lg:h-[98px] w-full max-w-[1287px] flex items-center justify-between relative"
-    : "bg-white border border-gray-300 rounded-full px-[18px] h-[70px] lg:h-[98px] w-full max-w-[1287px] flex items-center justify-between relative";
+    ? "bg-gray-900 border border-gray-600 rounded-full px-[18px] h-[70px] lg:h-[98px] w-full max-w-[1287px] flex items-center justify-between relative z-[99999]"
+    : "bg-white border border-gray-300 rounded-full px-[18px] h-[70px] lg:h-[98px] w-full max-w-[1287px] flex items-center justify-between relative z-[99999]";
 
   const headerClasses = isAbsolute 
-    ? "absolute top-0 left-0 right-0 z-20 flex justify-center py-4 px-[20px]"
-    : "flex justify-center py-4 px-[20px]";
+    ? "fixed w-full mx-auto top-0 left-0 z-[99999] flex justify-center py-4 px-[20px]"
+    : "fixed  w-full mx-auto left-0 flex justify-center py-4 px-[20px] z-[99999]";
 
   const linkClasses = isDark
-    ? "py-[20px] text-white text-[16px] lg:text-[20px] hover:text-blue-400 transition-colors"
-    : "text-gray-600 hover:text-[#03A3CC] transition-colors text-[16px] lg:text-[20px]";
+    ? "cursor-pointer py-[20px] text-white text-[16px] lg:text-[20px] hover:text-blue-400 transition-colors"
+    : "cursor-pointer text-gray-600 hover:text-[#03A3CC] transition-colors text-[16px] lg:text-[20px]";
 
   const activeLinkClasses = isDark
-    ? "bg-[#03A3CC] px-[20px] lg:px-[40px] py-[20px] rounded-full text-white text-[16px] lg:text-[20px] font-medium"
+    ? "cursor-pointer bg-[#03A3CC] px-[20px] lg:px-[40px] py-[20px] rounded-full text-white text-[16px] lg:text-[20px] font-medium"
     : "bg-[#03A3CC] text-white px-4 py-2 rounded-full";
 
   const logoClasses = isDark
@@ -86,8 +86,8 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
               >
                 <Link href="/">Home</Link>
               </motion.div>
-              <a href="#" className={linkClasses}>Service</a>
-              <a href="#" className={linkClasses}>Resume</a>
+              <a href="/#services" className={linkClasses}>Services</a>
+              <a href="/#resume" className={linkClasses}>Resume</a>
             {/* </div> */}
             
            
@@ -107,11 +107,9 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
               />
             </motion.div>
             
-            {/* Desktop Navigation Right */}
-            {/* <div className="hidden lg:flex items-center space-x-2"> */}
-              <a href="#about" className={linkClasses}>About</a>
-              <Link href="/portfolio" className={currentPage === 'portfolio' ? activeLinkClasses : linkClasses}>Project</Link>
-              <a href="#" className={linkClasses}>Contact</a>
+              <Link href="/#about-me" className={linkClasses}>About Me</Link>
+              <Link href="/projects" className={currentPage === 'projects' ? activeLinkClasses : linkClasses}>Projects</Link>
+              <Link href="/#footer" className={linkClasses}>Contact</Link>
             </div>
             
             {/* Mobile Menu */}
@@ -126,11 +124,11 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
                 >
                   <div className="flex flex-col space-y-2">
                     <Link href="/" className={currentPage === 'home' ? activeLinkClasses : linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-                    <a href="#" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Service</a>
-                    <a href="#" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Resume</a>
-                    <a href="#about" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>About</a>
-                    <Link href="/portfolio" className={currentPage === 'portfolio' ? activeLinkClasses : linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Project</Link>
-                    <a href="#" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
+                    <a href="/#services" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Services</a>
+                    <a href="/#resume" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Resume</a>
+                    <a href="/#about-me" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>About Me</a>
+                    <Link href="/projects" className={currentPage === 'projects' ? activeLinkClasses : linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
+                    <a href="#footer" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
                   </div>
                 </motion.div>
               )}
@@ -140,9 +138,11 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
           <>
             <div className={logoClasses}>AODZN</div>
             <div className="hidden md:flex space-x-8">
-              <Link href="/" className={currentPage === 'home' ? activeLinkClasses : linkClasses}>Home</Link>
-              <Link href="/portfolio" className={currentPage === 'portfolio' ? activeLinkClasses : linkClasses}>Project</Link>
-              <Link href="/contact" className={currentPage === 'contact' ? activeLinkClasses : linkClasses}>Contact</Link>
+              <Link href="/#about-me" className={currentPage === 'about-me' ? activeLinkClasses : linkClasses}>About Me</Link>
+              <Link href="/#services" className={currentPage === 'services' ? activeLinkClasses : linkClasses}>Services</Link>
+              <Link href="/#resume" className={currentPage === 'resume' ? activeLinkClasses : linkClasses}>Resume</Link>
+              <Link href="/projects" className={currentPage === 'projects' ? activeLinkClasses : linkClasses}>Projects</Link>
+              <Link href="#footer" className={currentPage === 'footer' ? activeLinkClasses : linkClasses}>Contact</Link>
             </div>
             
             {/* Mobile Menu Button for Light Theme */}

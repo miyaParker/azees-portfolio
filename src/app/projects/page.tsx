@@ -10,10 +10,10 @@ const PortfolioPage = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Header Navigation */}
-      <Navbar variant="dark" isAbsolute={false} currentPage="portfolio" />
+      <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
       {/* Hero Section - My Portfolio */}
-      <section className="pt-[100px] pb-[300px] px-4 sm:px-8 relative h-max ">
+      <section className="pt-[120px] lg:pt-[180px] mb-[120px] lg:mb-[150px] px-4 sm:px-8 relative h-max ">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>
@@ -21,7 +21,7 @@ const PortfolioPage = () => {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-cyan-500 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto relative z-10 text-center">
+        <div className="max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto relative z-10 text-center">
           <motion.h1 
             className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6"
             initial={{ opacity: 0, y: 30 }}
@@ -41,7 +41,7 @@ const PortfolioPage = () => {
           </motion.p>
 
           {/* Category Preview Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative top-[200px] items-center justify-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pt-0 lg:pt-[60px] items-center justify-center">
             {/* UI/UX Design Card */}
             <CascadedCard
               title="UI/UX Design"
@@ -74,7 +74,7 @@ const PortfolioPage = () => {
       </section>
 
       {/* UI/UX Design Section */}
-      <section className="py-20 px-4 sm:px-8 relative overflow-hidden">
+      <section className="mb-[120px] lg:mb-[150px] px-4 sm:px-8 relative overflow-hidden">
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div 
             className="text-center mb-16"
@@ -250,7 +250,7 @@ const PortfolioPage = () => {
       </section>
 
       {/* Brand Design Section */}
-      <section className="py-20 px-4 sm:px-8 relative overflow-hidden">
+      <section className="px-4 sm:px-8 relative overflow-hidden">
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div 
             className="text-center mb-16"
@@ -269,46 +269,34 @@ const PortfolioPage = () => {
 
           {/* Logo Grid */}
           <motion.div 
-            className="grid grid-cols-3 gap-8 max-w-7xl mx-auto"
+            className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-8 max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="bg-white rounded-2xl p-6 h-24 xl:w-[395px] xl:h-[395px] flex items-center justify-center">
-              <Image src="/brands/inside-africa.png" alt="Inside Africa" width={128} height={128} className="object-contain w-16 h-16 xl:w-80 xl:h-80" />
-            </div>
-            <div className="bg-white rounded-2xl p-6 h-24 xl:w-[395px] xl:h-[395px] flex items-center justify-center">
-              <Image src="/brands/eholaz.png" alt="Eholaz" width={128} height={128} className="object-contain w-16 h-16 xl:w-80 xl:h-80" />
-            </div>
-            <div className="bg-white rounded-2xl p-6 h-24 xl:w-[395px] xl:h-[395px] flex items-center justify-center">
-              <Image src="/brands/peeg.png" alt="Peeg" width={128} height={128} className="object-contain w-16 h-16 xl:w-80 xl:h-80" />
-            </div>
-            <div className="bg-white rounded-2xl p-6 h-24 xl:w-[395px] xl:h-[395px] flex items-center justify-center">
-              <Image src="/brands/obz.png" alt="OBZ" width={128} height={128} className="object-contain w-16 h-16 xl:w-80 xl:h-80" />
-            </div>
-            <div className="bg-white rounded-2xl p-6 h-24 xl:w-[395px] xl:h-[395px] flex items-center justify-center">
-              <Image src="/brands/mej.png" alt="MEJ" width={128} height={128} className="object-contain w-16 h-16 xl:w-80 xl:h-80" />
-            </div>
-            <div className="bg-white rounded-2xl p-6 h-24 xl:w-[395px] xl:h-[395px] flex items-center justify-center">
-              <Image src="/brands/blueberry.png" alt="Blueberry" width={128} height={128} className="object-contain w-16 h-16 xl:w-80 xl:h-80" />
-            </div>
-            <div className="bg-white rounded-2xl p-6 h-24 xl:w-[395px] xl:h-[395px] flex items-center justify-center">
-              <Image src="/brands/creme.png" alt="Creme" width={128} height={128} className="object-contain w-16 h-16 xl:w-80 xl:h-80" />
-            </div>
-            <div className="bg-white rounded-2xl p-6 h-24 xl:w-[395px] xl:h-[395px] flex items-center justify-center">
-              <Image src="/brands/lasgidi.png" alt="Lasgidi" width={128} height={128} className="object-contain w-16 h-16 xl:w-80 xl:h-80" />
-            </div>
-            <div className="bg-white rounded-2xl p-6 h-24 xl:w-[395px] xl:h-[395px] flex items-center justify-center">
-              <Image src="/brands/grabby.png" alt="Grabby" width={128} height={128} className="object-contain w-16 h-16 xl:w-80 xl:h-80" />
-            </div>
+            {/* <div className="bg-white rounded-2xl p-6 h-24 xl:w-[395px] xl:h-[395px] flex items-center justify-center"> */}
+              <Image src="/brands/inside-africa.png" alt="Inside Africa" width={395} height={395} />
+            {/* </div> */}
+              <Image src="/brands/eholaz.png" alt="Eholaz" width={395} height={395} />
+            
+              <Image src="/brands/peeg.png" alt="Peeg" width={395} height={395} />
+            
+              <Image src="/brands/obz.png" alt="OBZ" width={395} height={395} />
+            
+              <Image src="/brands/mej.png" alt="MEJ" width={395} height={395} />
+            
+              <Image src="/brands/blueberry.png" alt="Blueberry" width={395} height={395} />
+                          <Image src="/brands/creme.png" alt="Creme" width={395} height={395} />
+              <Image src="/brands/lasgidi.png" alt="Lasgidi" width={395} height={395} />
+              <Image src="/brands/grabby.png" alt="Grabby" width={395} height={395} />
           </motion.div>
         </div>
       </section>
 
       {/* Graphic Design Section */}
       <section className="py-20 px-4 sm:px-8 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto relative z-10">
           <motion.div 
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -326,24 +314,24 @@ const PortfolioPage = () => {
 
           {/* Graphic Showcase Grid */}
           <motion.div 
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-8"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Image src="/graphic-design/g-1.png" alt="Graphic 1" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
-            <Image src="/graphic-design/g-2.png" alt="Graphic 2" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
-            <Image src="/graphic-design/g-3.png" alt="Graphic 3" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
-            <Image src="/graphic-design/g-4.png" alt="Graphic 4" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
-            <Image src="/graphic-design/g-5.png" alt="Graphic 5" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
-            <Image src="/graphic-design/g-6.png" alt="Graphic 6" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
-            <Image src="/graphic-design/g-7.png" alt="Graphic 7" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
-            <Image src="/graphic-design/g-8.png" alt="Graphic 8" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
-            <Image src="/graphic-design/g-9.png" alt="Graphic 9" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
-            <Image src="/graphic-design/g-10.png" alt="Graphic 10" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
-            <Image src="/graphic-design/g-11.png" alt="Graphic 11" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
-            <Image src="/graphic-design/g-12.png" alt="Graphic 12" width={395} height={395} className="rounded-2xl w-full h-32 md:h-48 xl:h-[395px] object-cover" />
+            <Image src="/graphic-design/g-1.png" alt="Graphic 1" width={395} height={395}/>
+            <Image src="/graphic-design/g-2.png" alt="Graphic 2" width={395} height={395}/>
+            <Image src="/graphic-design/g-3.png" alt="Graphic 3" width={395} height={395}  />
+            <Image src="/graphic-design/g-4.png" alt="Graphic 4" width={395} height={395}  />
+            <Image src="/graphic-design/g-5.png" alt="Graphic 5" width={395} height={395}  />
+            <Image src="/graphic-design/g-6.png" alt="Graphic 6" width={395} height={395}  />
+            <Image src="/graphic-design/g-7.png" alt="Graphic 7" width={395} height={395}  />
+            <Image src="/graphic-design/g-8.png" alt="Graphic 8" width={395} height={395}  />
+            <Image src="/graphic-design/g-9.png" alt="Graphic 9" width={395} height={395}  />
+            <Image src="/graphic-design/g-10.png" alt="Graphic 10" width={395} height={395}  />
+            <Image src="/graphic-design/g-11.png" alt="Graphic 11" width={395} height={395}  />
+            <Image src="/graphic-design/g-12.png" alt="Graphic 12" width={395} height={395}  />
           </motion.div>
         </div>
       </section>

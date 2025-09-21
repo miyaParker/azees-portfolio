@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const WhyHireMeSection = () => {
   return (
@@ -109,13 +110,14 @@ const WhyHireMeSection = () => {
               transition={{ duration: 0.6, delay: 0.8 }}
               viewport={{ once: true }}
             >
-              <motion.button
+             <Link href="/#footer"> <motion.button
                 className="cursor-pointer bg-[#03A3CC] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#419CB3] transition-colors duration-300 shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Hire me
               </motion.button>
+              </Link>
             </motion.div>
           </motion.div>
         </div>
