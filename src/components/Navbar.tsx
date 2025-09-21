@@ -16,12 +16,12 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   const navClasses = isDark 
-    ? "bg-gray-900 border border-gray-600 rounded-full px-[18px] h-[70px] lg:h-[98px] w-full max-w-[1287px] flex items-center justify-between relative z-[99999]"
-    : "bg-white border border-gray-300 rounded-full px-[18px] h-[70px] lg:h-[98px] w-full max-w-[1287px] flex items-center justify-between relative z-[99999]";
+    ? "bg-gray-900 border border-gray-600 rounded-full px-[18px] h-[70px] lg:h-[98px] w-full flex items-center justify-between relative z-[99999]"
+    : "bg-white border border-gray-300 rounded-full px-[18px] h-[70px] lg:h-[98px] flex w-full items-center justify-between relative z-[99999]";
 
   const headerClasses = isAbsolute 
-    ? "fixed w-full mx-auto top-0 left-0 z-[99999] flex justify-center py-4 px-[20px]"
-    : "fixed  w-full mx-auto left-0 flex justify-center py-4 px-[20px] z-[99999]";
+    ? "fixed w-[calc(100%-40px)] top-0 left-[20px] z-[99999] flex justify-center py-4"
+    : "fixed  w-[calc(100%-40px)] left-[20px] flex justify-center py-4 z-[99999]";
 
   const linkClasses = isDark
     ? "cursor-pointer py-[20px] text-white text-[16px] lg:text-[20px] hover:text-blue-400 transition-colors"

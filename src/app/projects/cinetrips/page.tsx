@@ -7,9 +7,9 @@ import FooterSection from '@/components/FooterSection';
 
 const CineTripsPage = () => {
   return (
-    <div className="min-h-screen bg-white text-white" style={{ fontFamily: 'Poppins, sans-serif' }}>
+    <div className="overflow-x-hidden text-white" style={{ fontFamily: 'Poppins, sans-serif' }}>
       {/* Header Navigation */}
-      <Navbar variant="dark" isAbsolute={true} currentPage="portfolio" />
+      <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
       {/* Hero Section */}
       <div className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-screen overflow-hidden">
@@ -27,7 +27,7 @@ const CineTripsPage = () => {
         </div>
 
         {/* Main content */}
-        <div className="relative z-10 flex flex-col min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-screen">
+        <div className="w-full  relative z-10 flex flex-col min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-screen">
           {/* Centered title */}
           <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
             <motion.div
@@ -88,8 +88,8 @@ const CineTripsPage = () => {
       </div>
 
       {/* Intro Section */}
-      <section className="py-20 px-4 sm:px-8 bg-white">
-        <div className="max-w-[1513px] px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] mx-auto">
+      <section className="w-full max-w-[1513px] mx-auto py-20 px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] bg-white">
+        <div className="mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -298,8 +298,8 @@ const CineTripsPage = () => {
       </section>
 
       {/* Design Thinking Process Section */}
-      <section className="py-20 px-4 sm:px-8 bg-white">
-        <div className="max-w-[1513px] px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] mx-auto">
+      <section className="w-full max-w-[1513px] mx-auto py-20 px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] bg-white">
+        <div className="mx-auto">
           {/* Section Header */}
           <motion.div
             className="text-center mb-16"
@@ -310,16 +310,16 @@ const CineTripsPage = () => {
           >
             <div className="flex items-center justify-center space-x-4 mb-6">
               <div className="w-8 h-8 flex items-center justify-center">
-                <Image
+               
+              </div>
+              <h2 className="text-[36px] md:text-[44px] font-bold text-purple-900">
+              <Image
                   src="/projects/cinetrips/recovery-convert.png"
                   alt="Design Thinking Process Icon"
                   width={32}
                   height={32}
-                  className="w-8 h-8"
-                />
-              </div>
-              <h2 className="text-[36px] md:text-[44px] font-bold text-purple-900">
-                <span className="text-[#D70A84]">Design Thinking</span> Process
+                  className="w-8 h-8 inline-block"
+                /> <span className="text-[#D70A84]">Design Thinking</span> Process
               </h2>
             </div>
           </motion.div>
@@ -676,7 +676,7 @@ const CineTripsPage = () => {
 
             {/* Right Side - iPhone Mockup (Absolute positioned for medium+ screens) */}
             <motion.div
-              className="hidden md:block absolute top-0 -right-[120px] z-10 md:w-[35%] md:top-1/2 md:-translate-y-1/2"
+              className="hidden md:block absolute top-0 -right-[60px] z-10 md:w-[35%] md:top-1/2 md:-translate-y-1/2 z-5"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -768,7 +768,7 @@ const CineTripsPage = () => {
       </section>
 
       {/* Empathize Phase Section */}
-      <section className="py-20 px-4 sm:px-8 bg-[white] w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[80px]">
+      <section className="w-full max-w-[1513px] mx-auto py-20 px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] bg-white">
         <div className="max-w-[1513px] mx-auto">
          
           <div className="bg-[#FFFBF8] p-8">
@@ -880,7 +880,7 @@ const CineTripsPage = () => {
       </section>
 
       {/* Competitive Audit Section */}
-      <section className="py-20 px-4 sm:px-8 bg-white">
+      <section className="w-full max-w-[1513px] mx-auto py-20 px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] bg-white">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <motion.div
@@ -1005,8 +1005,8 @@ const CineTripsPage = () => {
       </section>
 
       {/* User Persona Section */}
-      <section className="py-20 px-4 sm:px-8 bg-white">
-        <div className="max-w-[1513px] px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] mx-auto">
+      <section className="w-full max-w-[1513px] mx-auto py-20 px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] bg-white">
+        <div className="w-full mx-auto max-w-[1513px] px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px]">
           {/* Section Header */}
           <motion.div
             className="text-center mb-16"
@@ -1035,28 +1035,28 @@ const CineTripsPage = () => {
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Left Column: Profile, Bio, Behaviour */}
-              <div className="grid grid-rows-3 gap-6 h-full">
+              <div className="space-y-6">
                 {/* Profile */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="text-center">
                     <div className="relative w-20 h-20 rounded-lg overflow-hidden mx-auto mb-4">
                       <Image src="/projects/cinetrips/sarah.png" alt="Sarah Thompson" fill className="object-cover" />
                     </div>
                     <h3 className="text-[20px] font-bold text-gray-900">Sarah Thompson</h3>
                   </div>
-                  <div className="mt-5 space-y-2 text-[20px] text-left text-gray-700">
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Age</span><span className="text-[#151410]">32 Years</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Gender</span><span className="text-[#151410]">Female</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Occupation</span><span className="text-[#151410]">Digital Marketing Manager</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Location</span><span className="text-[#151410]">Manchester, UK</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Relationship</span><span className="text-[#151410]">In a relationship</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Tech Comfort</span><span className="text-[#151410]">High</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px] inline-block">Favourite Genre</span><span className="text-[#151410]">Psychological thrillers, romance, comedies, Indie films</span></div>
+                  <div className="mt-5 space-y-2 text-[20px] text-center md:text-left text-gray-700">
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Age</span><span className="text-[#151410]">32 Years</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Gender</span><span className="text-[#151410]">Female</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Occupation</span><span className="text-[#151410]">Digital Marketing Manager</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Location</span><span className="text-[#151410]">Manchester, UK</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Relationship</span><span className="text-[#151410]">In a relationship</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Tech Comfort</span><span className="text-[#151410]">High</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Favourite Genre</span><span className="text-[#151410]">Psychological thrillers, romance, comedies, Indie films</span></div>
                   </div>
                 </div>
 
                 {/* Bio */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-[18px]">🔍</span>
                     <h4 className="text-[18px] font-bold text-gray-900">Bio</h4>
@@ -1067,7 +1067,7 @@ const CineTripsPage = () => {
                 </div>
 
                 {/* Behaviour */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-[18px]">📈</span>
                     <h4 className="text-[18px] font-bold text-gray-900">Behaviour</h4>
@@ -1083,52 +1083,53 @@ const CineTripsPage = () => {
               </div>
 
               {/* Right Column: Goals, Frustrations, Wants & Needs, Quote */}
-              <div className="grid grid-rows-4 gap-6">
+              <div className="space-y-6">
                 {/* Goals */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-[18px]">🎯</span>
                     <h4 className="text-[18px] font-bold text-gray-900">Goals</h4>
                   </div>
-                  <ul className="text-[20px] text-gray-700 space-y-2">
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>To easily discover new, high-rated films that align with her tastes</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>To coordinate movie nights with her partner and friends without switching apps</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>To earn perks or discounts for being a regular cinema-goer</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>To support local/independent cinemas while still enjoying mainstream blockbusters</span></li>
-                  </ul>
+                  <div className="text-[20px] text-gray-700 space-y-2">
+                    <p>•To easily discover new, high-rated films that align with her tastes</p>
+                    <p>•To coordinate movie nights with her partner and friends without switching apps</p>
+                    <p>•To earn perks or discounts for being a regular cinema-goer</p>
+                    <p>•To support local/independent cinemas while still enjoying mainstream blockbusters</p>
+                  </div>
                 </div>
 
                 {/* Frustrations */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-[18px]">😤</span>
                     <h4 className="text-[18px] font-bold text-gray-900">Frustrations</h4>
                   </div>
-                  <ul className="text-[20px] text-gray-700 space-y-2">
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Having to use different apps for different cinemas</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Lack of detailed information like cast bios or behind-the-scenes trivia</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Difficulty finding screenings with accessibility features for her friend with hearing loss</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Hidden fees during checkout</span></li>
-                  </ul>
+                  <div className="text-[20px] text-gray-700 space-y-2">
+                    <p>• Having to use different apps for different cinemas</p>
+                    <p>• Lack of detailed information like cast bios or behind-the-scenes trivia</p>
+                    <p>• Difficulty finding screenings with accessibility features for her friend with hearing loss</p>
+                    <p>• Hidden fees during checkout</p>
+                  </div>
                 </div>
 
                 {/* Wants & Needs */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-[18px]">💡</span>
                     <h4 className="text-[18px] font-bold text-gray-900">Wants & Needs</h4>
                   </div>
-                  <ul className="text-[20px] text-gray-700 space-y-2">
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>A reliable app that works across cinema chains</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Personalised recommendations with tailored watchlists</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>A clear breakdown of fees before checkout</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Transparent seat selection and the ability to invite friends</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Integration with loyalty/rewards programs or vouchers</span></li>
-                  </ul>
+                  <div className="text-[20px] text-gray-700 space-y-2">
+                    <p>• A reliable app that works across cinema chains</p>
+                    <p>• Accessibility features for her friend with hearing loss</p>
+                    <p>• Personalised recommendations with tailored watchlists</p>
+                    <p>• A clear breakdown of fees before checkout</p>
+                    <p>• Transparent seat selection and the ability to invite friends</p>
+                    <p>• Integration with loyalty/rewards programs or vouchers</p>
+                  </div>
                 </div>
 
                 {/* Quote */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="mb-3">
                     <svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M27.9035 0.000205994C32.3331 0.000205994 35.9297 3.59676 35.9297 8.06421C35.9297 12.2666 32.7115 15.6739 28.6229 16.0525C29.4558 17.5667 30.9701 19.1948 33.5446 20.7471C34.264 21.1636 34.7182 21.9207 34.7182 22.7158C34.7182 24.3436 33.0523 25.4795 31.5381 24.7982C27.1461 22.8291 19.8396 18.0214 19.8396 8.06441C19.8396 3.59689 23.4362 0.000409215 27.9036 0.000409215L27.9035 0.000205994Z" fill="#D70A84" />
@@ -1154,9 +1155,9 @@ const CineTripsPage = () => {
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Left Column: Profile, Bio, Behaviour */}
-              <div className="grid grid-rows-3 gap-6 h-full">
+              <div className="space-y-6">
                 {/* Profile */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="text-center">
                     <div className="relative w-20 h-20 rounded-lg overflow-hidden mx-auto mb-4">
                       <Image src="/projects/cinetrips/daniel.png" alt="Daniel Akanji" fill className="object-cover" />
@@ -1164,18 +1165,18 @@ const CineTripsPage = () => {
                     <h3 className="text-[20px] font-bold text-gray-900">Daniel Akanji</h3>
                   </div>
                   <div className="mt-5 space-y-2 text-[20px] text-left text-gray-700">
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Age</span><span className="text-[#151410]">25 Years</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Gender</span><span className="text-[#151410]">Male</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Occupation</span><span className="text-[#151410]">Graduate Student (Arts)</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Location</span><span className="text-[#151410]">Birmingham, UK</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Relationship</span><span className="text-[#151410]">Single</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px]">Tech Comfort</span><span className="text-[#151410]">Moderate to High</span></div>
-                    <div className="flex items-center gap-4"><span className="text-gray-500 w-max min-w-[150px] inline-block">Favourite Genre</span><span className="text-[#151410]">Action, sci-fi, horror, superhero movies</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Age</span><span className="text-[#151410]">25 Years</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Gender</span><span className="text-[#151410]">Male</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Occupation</span><span className="text-[#151410]">Graduate Student (Arts)</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Location</span><span className="text-[#151410]">Birmingham, UK</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Relationship</span><span className="text-[#151410]">Single</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px]">Tech Comfort</span><span className="text-[#151410]">Moderate to High</span></div>
+                    <div className="flex flex-col md:flex-row items-center gap-4"><span className="text-gray-500 w-max md:min-w-[150px] inline-block">Favourite Genre</span><span className="text-[#151410]">Action, sci-fi, horror, superhero movies</span></div>
                   </div>
                 </div>
 
                 {/* Bio */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-[18px]">🔍</span>
                     <h4 className="text-[18px] font-bold text-gray-900">Bio</h4>
@@ -1186,7 +1187,7 @@ const CineTripsPage = () => {
                 </div>
 
                 {/* Behaviour */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-[18px]">📈</span>
                     <h4 className="text-[18px] font-bold text-gray-900">Behaviour</h4>
@@ -1202,52 +1203,52 @@ const CineTripsPage = () => {
               </div>
 
               {/* Right Column: Goals, Frustrations, Wants & Needs, Quote */}
-              <div className="grid grid-rows-4 gap-6">
+              <div className="space-y-6">
                 {/* Goals */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-[18px]">🎯</span>
                     <h4 className="text-[18px] font-bold text-gray-900">Goals</h4>
                   </div>
                   <ul className="text-[20px] text-gray-700 space-y-2">
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>To discover and book screenings quickly, especially last-minute</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>To access student deals or special discounts</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>To build a personal movie-watching log</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>To see what others think of a film before committing</span></li>
+                    <li>•To discover and book screenings quickly, especially last-minute</li>
+                    <li>•To access student deals or special discounts</li>
+                    <li>•To build a personal movie-watching log</li>
+                    <li>•To see what others think of a film before committing</li>
                   </ul>
                 </div>
 
                 {/* Frustrations */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-[18px]">😤</span>
                     <h4 className="text-[18px] font-bold text-gray-900">Frustrations</h4>
                   </div>
                   <ul className="text-[20px] text-gray-700 space-y-2">
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Needing to download separate apps for Odeon, Vue, and Cineworld</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>No unified way to compare showtimes and prices across different cinemas</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Not knowing which cinemas offer student discounts or loyalty points</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Losing track of booked films or rewatching the same trailers elsewhere</span></li>
+                    <li>•Needing to download separate apps for Odeon, Vue, and Cineworld</li>
+                    <li>•No unified way to compare showtimes and prices across different cinemas</li>
+                    <li>•Not knowing which cinemas offer student discounts or loyalty points</li>
+                    <li>•Losing track of booked films or rewatching the same trailers elsewhere</li>
                   </ul>
                 </div>
 
                 {/* Wants & Needs */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-[18px]">💡</span>
                     <h4 className="text-[18px] font-bold text-gray-900">Wants & Needs</h4>
                   </div>
                   <ul className="text-[20px] text-gray-700 space-y-2">
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>An all-in-one cinema app for showtimes, trailers, and ticketing</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Quick, secure payment options and Apple/Google Pay integration</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>A personal profile that keeps track of watched films</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>User ratings and community reviews</span></li>
-                    <li className="flex items-start gap-2"><span className="text-black">•</span><span>Notifications for midnight premieres or exclusive fan screenings</span></li>
+                    <li>• An all-in-one cinema app for showtimes, trailers, and ticketing</li>
+                    <li>• Quick, secure payment options and Apple/Google Pay integration</li>
+                    <li>• A personal profile that keeps track of watched films</li>
+                    <li>• User ratings and community reviews</li>
+                    <li>• Notifications for midnight premieres or exclusive fan screenings</li>
                   </ul>
                 </div>
 
                 {/* Quote */}
-                <div className="bg-white rounded-2xl p-6 h-full flex flex-col">
+                <div className="bg-white rounded-2xl p-6">
                   <div className="mb-3">
                     <svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M27.9035 0.000205994C32.3331 0.000205994 35.9297 3.59676 35.9297 8.06421C35.9297 12.2666 32.7115 15.6739 28.6229 16.0525C29.4558 17.5667 30.9701 19.1948 33.5446 20.7471C34.264 21.1636 34.7182 21.9207 34.7182 22.7158C34.7182 24.3436 33.0523 25.4795 31.5381 24.7982C27.1461 22.8291 19.8396 18.0214 19.8396 8.06441C19.8396 3.59689 23.4362 0.000409215 27.9036 0.000409215L27.9035 0.000205994Z" fill="#D70A84" />
@@ -1292,9 +1293,9 @@ const CineTripsPage = () => {
               viewport={{ once: true }}
             >
               {/* Background Card */}
-              <div className="absolute inset-0 rounded-2xl transform rotate-3 w-full max-w-[595px]" style={{ backgroundColor: '#09868D' }}></div>
+              <div className="hidden md:block absolute inset-0 rounded-2xl transform rotate-3 w-full max-w-[595px]" style={{ backgroundColor: '#09868D' }}></div>
               {/* Main Card */}
-              <div className="w-full max-w-[595px] relative rounded-2xl p-8 transform -rotate-2" style={{ backgroundColor: '#77F8FF' }}>
+              <div className="w-full max-w-[595px] relative rounded-2xl p-8 transform md:-rotate-2" style={{ backgroundColor: '#77F8FF' }}>
                 <h3 className="text-[24px] font-medium text-gray-900 mb-6">Says</h3>
                 <ul className="space-y-3 text-[18px] text-gray-800">
                   <li className="flex items-start">
@@ -1323,16 +1324,16 @@ const CineTripsPage = () => {
 
             {/* Thinks Card */}
             <motion.div
-              className="relative bottom-30"
+              className="relative md:bottom-30"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
               {/* Background Card */}
-              <div className="absolute inset-0 rounded-2xl transform -rotate-3 w-full max-w-[595px]" style={{ backgroundColor: '#D70A84' }}></div>
+              <div className="hidden md:block absolute inset-0 rounded-2xl transform -rotate-3 w-full max-w-[595px]" style={{ backgroundColor: '#D70A84' }}></div>
               {/* Main Card */}
-              <div className="relative rounded-2xl p-8 transform rotate-2 w-full max-w-[595px]" style={{ backgroundColor: '#FFE5F2' }}>
+              <div className="relative rounded-2xl p-8 transform md:rotate-2 w-full max-w-[595px]" style={{ backgroundColor: '#FFE5F2' }}>
                 <h3 className="text-[24px] font-medium text-gray-900 mb-6">Thinks</h3>
                 <ul className="space-y-3 text-[18px] text-gray-800">
                   <li className="flex items-start">
@@ -1368,9 +1369,9 @@ const CineTripsPage = () => {
               viewport={{ once: true }}
             >
               {/* Background Card */}
-              <div className="absolute inset-0 rounded-2xl transform rotate-3 w-full max-w-[595px]" style={{ backgroundColor: '#777307' }}></div>
+              <div className="hidden md:block absolute inset-0 rounded-2xl transform md:-rotate-3 w-full max-w-[595px]" style={{ backgroundColor: '#777307' }}></div>
               {/* Main Card */}
-              <div className="relative rounded-2xl p-8 transform -rotate-2 w-full max-w-[595px]" style={{ backgroundColor: '#FFFB8E' }}>
+              <div className="relative rounded-2xl p-8 transform md:-rotate-2 w-full max-w-[595px]" style={{ backgroundColor: '#FFFB8E' }}>
                 <h3 className="text-[24px] font-medium text-gray-900 mb-6">Does</h3>
                 <ul className="space-y-3 text-[18px] text-gray-800">
                   <li className="flex items-start">
@@ -1403,16 +1404,16 @@ const CineTripsPage = () => {
 
             {/* Feels Card */}
             <motion.div
-              className="relative bottom-30"
+              className="relative md:bottom-30"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
               {/* Background Card */}
-              <div className="absolute inset-0 rounded-2xl transform -rotate-3 w-full max-w-[595px]" style={{ backgroundColor: '#083B6D' }}></div>
+                <div className="hidden md:block absolute inset-0 rounded-2xl transform -rotate-3 w-full max-w-[595px]" style={{ backgroundColor: '#083B6D' }}></div>
               {/* Main Card */}
-              <div className="relative rounded-2xl p-8 transform rotate-2 w-full max-w-[595px]" style={{ backgroundColor: '#BCDBFA' }}>
+              <div className="relative rounded-2xl p-8 transform md:rotate-2 w-full max-w-[595px]" style={{ backgroundColor: '#BCDBFA' }}>
                 <h3 className="text-[24px] font-medium text-gray-900 mb-6">Feels</h3>
                 <ul className="space-y-3 text-[18px] text-gray-800">
                   <li className="flex items-start">
@@ -1760,13 +1761,13 @@ const CineTripsPage = () => {
 
               <div className="space-y-4">
                 <div>
-                  <p className="text-gray-900 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] font-medium mb-2">
+                  <p className="text-gray-900 break-all text-[16px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] font-medium mb-2">
                     ABCDEFGHIJKLMNOPQRSTUVWXYZ
                   </p>
-                  <p className="text-gray-700 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px]">
+                  <p className="break-all text-gray-700 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px]">
                     abcdefghijklmnopqrstuvwxyz
                   </p>
-                  <p className="text-gray-700 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px]">
+                  <p className="break-all text-gray-700 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px]">
                     1234567890
                   </p>
                 </div>
