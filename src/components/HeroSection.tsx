@@ -117,7 +117,7 @@ const HeroSection = () => {
                 <path d="M28.3651 17.9452H21.3301C21.4501 10.9402 22.8301 9.7852 27.1351 7.2352C27.6301 6.9352 27.7951 6.3052 27.4951 5.7952C27.1951 5.3002 26.5651 5.1352 26.0551 5.4352C20.9851 8.4352 19.2151 10.2652 19.2151 18.9952V27.0802C19.2151 29.6452 21.3001 31.7152 23.8501 31.7152H28.3501C30.9901 31.7152 32.9851 29.7202 32.9851 27.0802V22.5802C33.0001 19.9402 31.0051 17.9452 28.3651 17.9452Z" fill="#344054" />
               </svg>
             </motion.div>
-            <p className="text-gray-900 text-md font-medium leading-relaxed text-center">
+            <p className="text-gray-900 text-md font-medium leading-relaxed text-left">
               Abdul's Professional execution elevated our brand experience. Strongly endorsed.
             </p>
           </div>
