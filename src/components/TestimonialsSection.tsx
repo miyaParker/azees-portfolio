@@ -98,13 +98,13 @@ const TestimonialsSection = () => {
         <div className="overflow-hidden px-4 sm:px-6 lg:px-8">
           <motion.div
             className="flex gap-8 pr-8"
-            animate={{ x: ['0%', '-50%'] }}
-            transition={{ duration: 30, ease: 'linear', repeat: Infinity }}
+            animate={{ x: ['0%', '-100%'] }}
+            transition={{duration:9, ease: 'linear', repeat: Infinity }}
           >
-            {[...testimonials, ...testimonials].map((testimonial, index) => (
+            {[...testimonials, ...testimonials, ].map((testimonial, index) => (
               <div
                 key={`${testimonial.id}-${index}`}
-                className="bg-white/[0.14] border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 w-full max-w-[790px]"
+                className="min-w-[320px] bg-white/[0.14] border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 w-full max-w-[790px]"
                 style={{ flex: '0 0 auto' }}
               >
                 {/* Header: Avatar + Name/Title on left, quote mark on right */}

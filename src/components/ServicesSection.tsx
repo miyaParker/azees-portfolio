@@ -6,7 +6,7 @@ import CascadedCard from './CascadedCard';
 
 const ServicesSection = () => {
   return (
-    <section className="pt-[100px] pb-[300px] px-4 sm:px-8 bg-gray-900 relative h-max">
+    <section className="py-[60px] md:py-[100px] w-full mx-auto px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] bg-gray-900 relative h-max">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>
@@ -14,7 +14,7 @@ const ServicesSection = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-cyan-500 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="w-full max-w-[1513px] mx-auto relative z-10">
         {/* Header */}
         <motion.div 
           className="text-center mb-16"
@@ -23,7 +23,7 @@ const ServicesSection = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 lg:mb-12">
             <span className="text-white">My </span>
             <span className="text-[#03A3CC]">Services</span>
           </h2>
@@ -33,7 +33,7 @@ const ServicesSection = () => {
         </motion.div>
 
         {/* Services Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative top-[200px]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 ">
             {/* UI/UX Design Card */}
             <CascadedCard
               title="UI/UX Design"

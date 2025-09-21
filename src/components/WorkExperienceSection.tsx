@@ -47,7 +47,7 @@ const WorkExperienceSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-8 bg-white relative overflow-hidden">
+    <section className="w-full max-w-[1513px] mx-auto py-20 px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] bg-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>
@@ -77,12 +77,23 @@ const WorkExperienceSection = () => {
             {experiences.map((experience, index) => (
               <motion.div
                 key={experience.id}
-                className="relative flex flex-col lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-start gap-6"
+                className="relative flex flex-col lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-start gap-2 lg:gap-6"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
+                <div className="w-[32px] h-[32px] rounded-full border-2 border-dotted border-gray-900 flex items-center justify-center lg:hidden">
+                      <motion.div
+                        className={`w-6 h-6 rounded-full ${
+                          experience.isActive 
+                            ? 'bg-[#03A3CC]' 
+                            : 'bg-gray-900'
+                        }`}
+                        whileHover={{ scale: 1.2 }}
+                        transition={{ type: "spring", stiffness: 300 }}
+                      />
+                    </div>
                 {/* Left Column - Company & Dates */}
                 <div className="w-full lg:max-w-[520px] pr-0 lg:pr-8 text-right lg:text-right self-start">
                   <motion.div
@@ -92,9 +103,12 @@ const WorkExperienceSection = () => {
                     transition={{ duration: 0.6, delay: index * 0.2 + 0.3 }}
                     viewport={{ once: true }}
                   >
-                    <h3 className="text-left text-gray-700 text-[28px] sm:text-[32px] lg:text-[40px] font-semibold mb-2">
+                    <h3 className="text-left text-gray-700 text-[28px] sm:text-[32px] lg:text-[40px] font-semibold mb-0 lg:mb-2">
                       {experience.company}
                     </h3>
+                    <h4 className="text-left block lg:hidden text-gray-800 text-[20px] sm:text-[24px] lg:text-[28px] font-semibold mb-3">
+                      {experience.role}
+                    </h4>
                     <p className="text-left text-gray-500 text-[18px] sm:text-[20px] lg:text-[24px] font-normal">
                       {experience.period}
                     </p>
@@ -102,7 +116,7 @@ const WorkExperienceSection = () => {
                 </div>
 
                 {/* Center Column - Timeline Circle and Line */}
-                <div className="relative flex-shrink-0 self-stretch">
+                <div className="hidden lg:block relative flex-shrink-0 self-stretch">
                   <div className="flex-shrink-0 z-10 self-start">
                     <div className="w-[48px] h-[48px] rounded-full border-2 border-dotted border-gray-900 flex items-center justify-center mx-auto">
                       <motion.div
@@ -144,7 +158,7 @@ const WorkExperienceSection = () => {
                     transition={{ duration: 0.6, delay: index * 0.2 + 0.3 }}
                     viewport={{ once: true }}
                   >
-                    <h4 className="text-gray-800 text-[28px] sm:text-[32px] lg:text-[40px] font-semibold mb-3">
+                    <h4 className="hidden lg:block text-gray-800 text-[28px] sm:text-[32px] lg:text-[40px] font-semibold mb-3">
                       {experience.role}
                     </h4>
                     <p className="text-gray-600 text-[18px] sm:text-[20px] lg:text-[24px] font-normal leading-relaxed">

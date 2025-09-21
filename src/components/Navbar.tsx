@@ -16,24 +16,24 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   const navClasses = isDark 
-    ? "bg-gray-900 border border-gray-600 rounded-full px-[18px] h-[98px] w-full max-w-[1287px] flex items-center justify-between relative"
-    : "bg-white border border-gray-300 rounded-full px-[18px] h-[98px] w-full max-w-[1287px] flex items-center justify-between relative";
+    ? "bg-gray-900 border border-gray-600 rounded-full px-[18px] h-[70px] lg:h-[98px] w-full max-w-[1287px] flex items-center justify-between relative"
+    : "bg-white border border-gray-300 rounded-full px-[18px] h-[70px] lg:h-[98px] w-full max-w-[1287px] flex items-center justify-between relative";
 
   const headerClasses = isAbsolute 
-    ? "absolute top-0 left-0 right-0 z-20 flex justify-center py-4"
-    : "flex justify-center py-4";
+    ? "absolute top-0 left-0 right-0 z-20 flex justify-center py-4 px-[20px]"
+    : "flex justify-center py-4 px-[20px]";
 
   const linkClasses = isDark
-    ? "px-[20px] lg:px-[40px] py-[20px] text-white text-[16px] lg:text-[20px] hover:text-blue-400 transition-colors"
-    : "text-gray-600 hover:text-[#03A3CC] transition-colors text-[16px] lg:text-[18px]";
+    ? "py-[20px] text-white text-[16px] lg:text-[20px] hover:text-blue-400 transition-colors"
+    : "text-gray-600 hover:text-[#03A3CC] transition-colors text-[16px] lg:text-[20px]";
 
   const activeLinkClasses = isDark
     ? "bg-[#03A3CC] px-[20px] lg:px-[40px] py-[20px] rounded-full text-white text-[16px] lg:text-[20px] font-medium"
     : "bg-[#03A3CC] text-white px-4 py-2 rounded-full";
 
   const logoClasses = isDark
-    ? "text-white text-xl lg:text-2xl font-bold"
-    : "text-xl lg:text-2xl font-bold text-[#03A3CC]";
+    ? "text-white text-xl lg:text-2xl font-bold shrink-0"
+    : "text-xl lg:text-2xl font-bold text-[#03A3CC] shrink-0";
 
   const mobileMenuClasses = isDark
     ? "absolute top-full left-0 right-0 mt-2 bg-gray-900 border border-gray-600 rounded-2xl p-4 shadow-lg"
@@ -53,8 +53,32 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
       >
         {isDark ? (
           <>
+           {/* Mobile Menu Button */}
+          
+            <motion.div 
+              className="flex items-center lg:hidden"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
+            >
+              <Image
+                src="/logo.svg"
+                alt="AODZN Logo"
+                width={138}
+                height={44}
+                className="h-6 lg:h-8 w-auto"
+              />
+            </motion.div>
+            <button
+              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-800 transition-colors cursor-pointer"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-2">
+            <div className="hidden lg:flex items-center justify-between w-full">
               <motion.div
                 className={currentPage === 'home' ? activeLinkClasses : linkClasses}
                 whileHover={{ scale: 1.05 }}
@@ -64,17 +88,9 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
               </motion.div>
               <a href="#" className={linkClasses}>Service</a>
               <a href="#" className={linkClasses}>Resume</a>
-            </div>
+            {/* </div> */}
             
-            {/* Mobile Menu Button */}
-            <button
-              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-800 transition-colors"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            >
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+           
             
             <motion.div 
               className="flex items-center"
@@ -92,7 +108,7 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
             </motion.div>
             
             {/* Desktop Navigation Right */}
-            <div className="hidden lg:flex items-center space-x-2">
+            {/* <div className="hidden lg:flex items-center space-x-2"> */}
               <a href="#about" className={linkClasses}>About</a>
               <Link href="/portfolio" className={currentPage === 'portfolio' ? activeLinkClasses : linkClasses}>Project</Link>
               <a href="#" className={linkClasses}>Contact</a>
