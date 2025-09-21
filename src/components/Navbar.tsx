@@ -86,8 +86,8 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
               >
                 <Link href="/">Home</Link>
               </motion.div>
-              <a href="/#services" className={linkClasses}>Services</a>
-              <a href="/#resume" className={linkClasses}>Resume</a>
+              <Link href="/#services" className={linkClasses}>Services</Link>
+              <Link href="/#resume" className={linkClasses}>Resume</Link>
             {/* </div> */}
             
            
@@ -124,11 +124,11 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
                 >
                   <div className="flex flex-col space-y-2">
                     <Link href="/" className={currentPage === 'home' ? activeLinkClasses : linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-                    <a href="/#services" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Services</a>
-                    <a href="/#resume" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Resume</a>
-                    <a href="/#about-me" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>About Me</a>
+                    <Link href="/#services" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
+                    <Link href="/#resume" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Resume</Link>
+                    <Link href="/#about-me" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>About Me</Link>
                     <Link href="/projects" className={currentPage === 'projects' ? activeLinkClasses : linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
-                    <a href="#footer" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
+                    <Link href="#footer" className={linkClasses} onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
                   </div>
                 </motion.div>
               )}

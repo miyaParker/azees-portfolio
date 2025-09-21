@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/24/solid';
-import Navbar from './Navbar';
 import Link from 'next/link';
 
 const HeroSection = () => {
