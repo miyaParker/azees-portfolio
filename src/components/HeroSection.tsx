@@ -3,16 +3,17 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/24/solid';
+import Navbar from './Navbar';
 import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <div className="pt-[80px] md:pt-[120px] h-screen md:max-h-[750px] lg:max-h-[945px] bg-white max-w-[1440px] mx-auto relative">
+    <div className="pt-[80px] md:pt-[120px] h-screen min-h-[950px] md:min-h-[500px] md:max-h-[750px] lg:max-h-[945px] bg-white max-w-[1440px] mx-auto relative">
       {/* Header Navigation */}
       
 
       {/* Main Hero Content */}
-      <div id="about-me" className="min-h-[900px] w-full flex flex-col md:flex-row items-start px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] lg:pt-16 pb-28 lg:pb-32 relative">
+      <div id="about-me" className="w-full flex flex-col md:flex-row items-start px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] lg:pt-16 pb-28 lg:pb-32 relative">
         {/* Left Side - Text Content */}
         <motion.div
           className="w-full md:w-[70%] text-center lg:text-center pt-4 lg:pt-8 "
@@ -224,7 +225,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.6 }}
         >
-          <div className="flex">
+          <div className="flex items-center">
             <Link href="/projects">  <motion.button
               className="cursor-pointer bg-[#03A3CC] text-white px-[16px] lg:px-[32px]  py-[10px] lg:py-[15px] rounded-[40px] font-medium flex items-center justify-center space-x-2 hover:bg-[#0288B3] transition-colors w-max"
               whileHover={{ scale: 1.02 }}
