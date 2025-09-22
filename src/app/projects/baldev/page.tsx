@@ -9,7 +9,7 @@ const BaldevProjectPage = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Header Navigation */}
-      <Navbar variant="dark" isAbsolute={true} currentPage="portfolio" />
+      <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
       {/* Hero Section */}
       <div className="relative min-h-screen overflow-hidden">
@@ -89,7 +89,7 @@ const BaldevProjectPage = () => {
 
       {/* Executive Summary */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -118,7 +118,7 @@ const BaldevProjectPage = () => {
 
       {/* Company Overview */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -152,7 +152,7 @@ const BaldevProjectPage = () => {
 
       {/* The Challenge */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -190,7 +190,7 @@ const BaldevProjectPage = () => {
 
       {/* Stakeholders Interview */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -217,7 +217,7 @@ const BaldevProjectPage = () => {
 
       {/* Pain Points */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -249,7 +249,7 @@ const BaldevProjectPage = () => {
 
       {/* Competitor Benchmarking */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -276,7 +276,7 @@ const BaldevProjectPage = () => {
 
       {/* Business Goals */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -298,7 +298,7 @@ const BaldevProjectPage = () => {
 
       {/* Strategy and Objectives */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -334,7 +334,7 @@ const BaldevProjectPage = () => {
 
       {/* Low-fidelity Wireframe */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -366,7 +366,7 @@ const BaldevProjectPage = () => {
 
       {/* Results */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -428,7 +428,7 @@ const BaldevProjectPage = () => {
 
       {/* Conclusion */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

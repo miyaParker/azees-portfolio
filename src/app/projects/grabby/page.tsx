@@ -6,7 +6,7 @@ import Navbar from '@/components/Navbar';
 
 const GrabbyPage = () => {
   return (
-    <div className="min-h-screen  text-white">
+    <div className="min-h-screen  text-white overflow-x-hidden">
       <Navbar variant="dark" isAbsolute={false} />
 
       {/* Hero Section */}
@@ -15,7 +15,7 @@ const GrabbyPage = () => {
         <div className="relative z-10 flex-1 flex items-center justify-center">
           <div className="text-center px-4 sm:px-8 max-w-4xl mx-auto">
             <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight"
+              className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[54px] xl:text-[64px] font-bold text-white mb-8 leading-tight"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -309,10 +309,10 @@ const GrabbyPage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-[32px] lg:text-[40px] xl:text-[48px] font-bold text-black">
+<h2 className="text-[28px] md:text-[36px] lg:text-[44px] xl:text-[48px] font-bold text-black">
                 Problem <span className="text-red-500">Statement</span>
               </h2>
-              <p className="text-[16px] lg:text-[18px] xl:text-[20px] text-black leading-relaxed max-w-[640px]">
+<p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] text-black leading-relaxed max-w-[640px]">
                 Many online shoppers struggle to find a reliable and user-friendly e‑commerce app that offers
                 a seamless shopping experience, with clear product listings and an easy checkout process.
                 Additionally, many users are hesitant to bid on items online, as they may not understand the
@@ -336,7 +336,7 @@ const GrabbyPage = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-[32px] lg:text-[40px] xl:text-[48px] font-bold text-black">
+<h2 className="text-[28px] md:text-[36px] lg:text-[44px] xl:text-[48px] font-bold text-black">
                 Possible <span className="text-red-500">Solution</span>
               </h2>
               <div className="space-y-4 text-[16px] lg:text-[18px] xl:text-[20px] text-black leading-relaxed">
@@ -382,7 +382,7 @@ const GrabbyPage = () => {
                   className="w-8 h-8"
                 />
               </div>
-              <h2 className="text-[36px] md:text-[44px] font-bold text-purple-900">
+<h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold text-purple-900">
                 <span className="text-[#C50536]">Design Thinking</span> Process
               </h2>
             </div>
@@ -787,7 +787,7 @@ const GrabbyPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-bold">
+<h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold">
               <span className="text-black">Empathize </span>
               <span className="text-[#C50536]">Phase</span>
             </h2>
@@ -803,9 +803,9 @@ const GrabbyPage = () => {
             >
               <div className="flex items-start space-x-4 mb-6">
                 <div className="relative mt-2 flex-shrink-0">
-                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#C50536]/5"></span>
-                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-[#C50536]/5"></span>
-                  <span className="relative block w-2 h-2 bg-[#C50536] rounded-full"></span>
+                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 rounded-full bg-[#C50536]/5"></span>
+                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 rounded-full bg-[#C50536]/5"></span>
+                  <span className="relative block w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 bg-[#C50536] rounded-full"></span>
                 </div>
                 <h3 className="text-[24px] md:text-[26px] font-bold text-gray-800">Qualitative Research</h3>
               </div>
@@ -824,9 +824,9 @@ const GrabbyPage = () => {
             >
               <div className="flex items-start space-x-4 mb-6">
                 <div className="relative mt-2 flex-shrink-0">
-                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#C50536]/5"></span>
-                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-[#C50536]/5"></span>
-                  <span className="relative block w-2 h-2 bg-[#C50536] rounded-full"></span>
+                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 rounded-full bg-[#C50536]/5"></span>
+                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 rounded-full bg-[#C50536]/5"></span>
+                  <span className="relative block w-2 h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 bg-[#C50536] rounded-full"></span>
                 </div>
                 <h3 className="text-[24px] md:text-[26px] font-bold text-gray-800">Interview Questions</h3>
               </div>
@@ -845,7 +845,7 @@ const GrabbyPage = () => {
                 ].map((question, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     <div className="relative mt-3 flex-shrink-0">
-                      <span className="relative block w-2 h-2 bg-black rounded-full"></span>
+                      <span className="relative block w-2 h-2 bg-black rounded-full shrink-0"></span>
                     </div>
                     <p className="text-gray-700 text-[18px] md:text-[20px] leading-relaxed text-justify">{question}</p>
                   </div>
@@ -875,8 +875,8 @@ const GrabbyPage = () => {
                 "Personalization and recommendation features can enhance the user experience, with users looking for customized recommendations based on their browsing and purchase history."
               ].map((insight, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <div className="relative mt-3 flex-shrink-0">
-                    <span className="relative block w-2 h-2 bg-black rounded-full"></span>
+                    <div className="relative mt-3 flex-shrink-0">
+                      <span className="relative block w-2 h-2 bg-black rounded-full shrink-0"></span>
                   </div>
                   <p className="text-gray-700 text-[18px] md:text-[20px] leading-relaxed text-justify">{insight}</p>
                 </div>
@@ -897,7 +897,7 @@ const GrabbyPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-bold mb-6">
+<h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold mb-6">
               <span className="text-gray-900">Competitive </span>
               <span className="text-[#C50536]">Audit</span>
             </h2>
@@ -1045,7 +1045,7 @@ const GrabbyPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-bold mb-4">
+<h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold mb-4">
               <span className="text-black">User </span>
               <span className="text-[#C50536]">Persona</span>
             </h2>
@@ -1142,8 +1142,8 @@ const GrabbyPage = () => {
                     <h4 className="text-[22px] font-bold text-[#C50536]">Goals</h4>
                   </div>
                   <ul className="space-y-2 text-gray-800">
-                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536]"></span><span>Buy goods online conveniently from the comfort of your home.</span></li>
-                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536]"></span><span>Time management and ease of delivery.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Buy goods online conveniently from the comfort of your home.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Time management and ease of delivery.</span></li>
                   </ul>
                 </div>
 
@@ -1159,10 +1159,10 @@ const GrabbyPage = () => {
                     <h4 className="text-[22px] font-bold text-[#C50536]">Frustrations</h4>
                   </div>
                   <ul className="space-y-2 text-gray-800">
-                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536]"></span><span>Faulty payment gateways.</span></li>
-                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536]"></span><span>Limited payment options.</span></li>
-                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536]"></span><span>Lack of quality items being delivered.</span></li>
-                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536]"></span><span>Delayed delivery.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Faulty payment gateways.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Limited payment options.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Lack of quality items being delivered.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Delayed delivery.</span></li>
                   </ul>
                 </div>
 
@@ -1189,7 +1189,7 @@ const GrabbyPage = () => {
                         <span className="w-24 text-gray-800">{item.label}</span>
                         <div className="flex items-center gap-3">
                           {Array.from({ length: 5 }).map((_, i) => (
-                            <span key={i} className={`w-[30px] h-[30px] rounded-full ${i < item.score ? 'bg-[#C50536]' : 'bg-gray-300'}`}></span>
+                            <span key={i} className={`w-[18px] h-[18px] sm:w-[22px] sm:h-[22px] md:w-[26px] md:h-[26px] lg:w-[30px] lg:h-[30px] rounded-full ${i < item.score ? 'bg-[#C50536]' : 'bg-gray-300'}`}></span>
                           ))}
                         </div>
                       </div>
@@ -1289,9 +1289,9 @@ const GrabbyPage = () => {
                   <h4 className="text-[22px] font-bold text-[#FF7300]">Goals</h4>
                 </div>
                 <ul className="space-y-2 text-gray-800">
-                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300]"></span><span>Price range.</span></li>
-                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300]"></span><span>Diversity of brands.</span></li>
-                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300]"></span><span>Availability of goods.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Price range.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Diversity of brands.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Availability of goods.</span></li>
                 </ul>
               </div>
 
@@ -1307,9 +1307,9 @@ const GrabbyPage = () => {
                   <h4 className="text-[22px] font-bold text-[#FF7300]">Frustrations</h4>
                 </div>
                 <ul className="space-y-2 text-gray-800">
-                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300]"></span><span>Item ordered doesn’t match description.</span></li>
-                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300]"></span><span>Delayed delivery.</span></li>
-                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300]"></span><span>App is not user friendly and too slow.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Item ordered doesn’t match description.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Delayed delivery.</span></li>
+              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>App is not user friendly and too slow.</span></li>
                 </ul>
               </div>
 
@@ -1336,7 +1336,7 @@ const GrabbyPage = () => {
                       <span className="w-24 text-gray-800">{item.label}</span>
                       <div className="flex items-center gap-3">
                         {Array.from({ length: 5 }).map((_, i) => (
-                          <span key={i} className={`w-[30px] h-[30px] rounded-full ${i < item.score ? 'bg-[#FF7300]' : 'bg-gray-300'}`}></span>
+                          <span key={i} className={`w-[18px] h-[18px] sm:w-[22px] sm:h-[22px] md:w-[26px] md:h-[26px] lg:w-[30px] lg:h-[30px] rounded-full ${i < item.score ? 'bg-[#FF7300]' : 'bg-gray-300'}`}></span>
                         ))}
                       </div>
                     </div>
@@ -1353,8 +1353,8 @@ const GrabbyPage = () => {
 
         <div className="overflow-hidden w-full max-w-[1513px] mx-auto py-20 bg-[#FFFBF8] px-[20px] sm:px-[40px] lg:px-[80px] relative z-10">
           {/* Decorative left semicircle */}
-          <div className="pointer-events-none absolute translate-x-[-60%] translate-y-[15%] top-10 w-[620px] h-[620px] bg-[#FFF4EB] rounded-full"></div>
-          <div className="pointer-events-none absolute right-0 translate-x-[60%] translate-y-[15%] top-10 w-[620px] h-[620px] bg-[#FFF4F7] rounded-full"></div>
+          <div className="pointer-events-none absolute translate-x-[-60%] translate-y-[15%] top-10 w-[45vw] sm:w-[38vw] md:w-[32vw] lg:w-[28vw] xl:w-[24vw] 2xl:w-[22vw] aspect-square bg-[#FFF4EB] rounded-full"></div>
+          <div className="pointer-events-none absolute right-0 translate-x-[60%] translate-y-[15%] top-10 w-[45vw] sm:w-[38vw] md:w-[32vw] lg:w-[28vw] xl:w-[24vw] 2xl:w-[22vw] aspect-square bg-[#FFF4F7] rounded-full"></div>
 
           {/* Section Header */}
           <motion.div
@@ -1364,7 +1364,7 @@ const GrabbyPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-bold mb-6">
+<h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold mb-6">
               <span className="text-gray-900">Empathy </span>
               <span className="text-[#C50536]">Mapping</span>
             </h2>
@@ -1636,9 +1636,9 @@ const GrabbyPage = () => {
                 </div>
 
                 <div className="space-y-2 text-black font-['Poppins']">
-                  <div className="text-xl md:text-2xl">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
-                  <div className="text-xl md:text-2xl">abcdefghijklmnopqrstuvwxyz</div>
-                  <div className="text-xl md:text-2xl">1234567890</div>
+                  <div className="text-xl md:text-2xl break-all">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+                  <div className="text-xl md:text-2xl break-all">abcdefghijklmnopqrstuvwxyz</div>
+                  <div className="text-xl md:text-2xl break-all">1234567890</div>
                 </div>
               </div>
 
@@ -2040,18 +2040,18 @@ const GrabbyPage = () => {
       {/* High Fidelity Prototype Link Section */}
       <section className="w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[80px]">
         <div className="max-w-[1513px] mx-auto bg-white py-[60px]">
-          <div className="text-center mb-[24px]">
-            <h3 className="font-bold text-[44px] leading-[54px]">
+          <div className="text-center mb-[16px] sm:mb-[20px] md:mb-[24px]">
+            <h3 className="font-bold text-[28px] md:text-[36px] lg:text-[44px] leading-[36px] md:leading-[46px] lg:leading-[54px]">
               <span className="text-black">High Fidelity </span>
               <span className="text-[#C50536]">Prototype Link</span>
             </h3>
           </div>
-          <div className="mx-auto max-w-[1200px] text-center">
+          <div className="mx-auto max-w-[1200px] text-center px-[16px] sm:px-[20px]">
             <a
               href="https://www.figma.com/design/7Dns01JoKSVmkZ6pDnGhT3/Abdulazees-Design-Portfolio?node-id=0-1&p=f&t=nJdvHgudrP7Hm4Kz-0"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-[#0067A2] underline break-words break-all text-[28px] leading-[44px]"
+              className="inline-block text-[#0067A2] underline break-words break-all text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[28px] sm:leading-[32px] md:leading-[36px] lg:leading-[40px]"
             >
               https://www.figma.com/design/7Dns01JoKSVmkZ6pDnGhT3/Abdulazees-Design-Portfolio?node-id=0-1&p=f&t=nJdvHgudrP7Hm4Kz-0
             </a>

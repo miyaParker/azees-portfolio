@@ -89,7 +89,7 @@ const RositaCuisinePage = () => {
 
       {/* Overview Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -111,7 +111,7 @@ const RositaCuisinePage = () => {
 
       {/* Introducing Rosita Cuisine App Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -193,7 +193,7 @@ const RositaCuisinePage = () => {
 
       {/* Challenge Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -249,7 +249,7 @@ const RositaCuisinePage = () => {
 
       {/* Defining the Problem Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -268,7 +268,7 @@ const RositaCuisinePage = () => {
 
       {/* Opportunity Section */}
       <section className="py-14" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -286,7 +286,7 @@ const RositaCuisinePage = () => {
 
       {/* Hypothesis Statement Card */}
       <section className="py-10" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -309,7 +309,7 @@ const RositaCuisinePage = () => {
 
       {/* Desk Research Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -347,7 +347,7 @@ const RositaCuisinePage = () => {
 
       {/* User Research Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -386,7 +386,7 @@ const RositaCuisinePage = () => {
 
       {/* Insights Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+          <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -418,7 +418,7 @@ const RositaCuisinePage = () => {
 
       {/* Feature Prioritisation Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -448,9 +448,9 @@ const RositaCuisinePage = () => {
         </div>
       </section>
 
-      {/* /rositaitive Audit Section */}
+      {/* Rosita Audit Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -459,7 +459,7 @@ const RositaCuisinePage = () => {
             className="text-white/90"
           >
             <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-8">
-              /rositaitive <span style={{ color: "#0EDAC6" }}>Audit</span>
+              Competitive <span style={{ color: "#0EDAC6" }}>Audit</span>
             </h2>
 
             <div className="space-y-6 text-[20px] leading-relaxed">
@@ -494,7 +494,7 @@ const RositaCuisinePage = () => {
 
       {/* Constraints Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -531,7 +531,7 @@ const RositaCuisinePage = () => {
 
       {/* Sitemap Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -555,7 +555,7 @@ const RositaCuisinePage = () => {
 
       {/* Design Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -587,7 +587,7 @@ const RositaCuisinePage = () => {
 
       {/* Final Solution Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -606,7 +606,7 @@ const RositaCuisinePage = () => {
 
       {/* Registration Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -638,7 +638,7 @@ const RositaCuisinePage = () => {
 
       {/* End-to-End Screens Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+          <div className="w-full max-w-[1513px] mx-auto px-[20px]  md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -698,7 +698,7 @@ const RositaCuisinePage = () => {
 
       {/* Usability Testing Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -748,7 +748,7 @@ const RositaCuisinePage = () => {
 
       {/* Major Takeaway Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] mx-auto px-[20px] md:px-[60px] lg:px-[80px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

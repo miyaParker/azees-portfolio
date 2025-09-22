@@ -16,12 +16,12 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   const navClasses = isDark 
-    ? "bg-gray-900 border border-gray-600 rounded-full px-[18px] h-[70px] lg:h-[98px] w-full flex items-center justify-between relative z-[99999]"
-    : "bg-white border border-gray-300 rounded-full px-[18px] h-[70px] lg:h-[98px] flex w-full items-center justify-between relative z-[99999]";
+    ? "bg-gray-900 border border-gray-600 rounded-full px-[18px] h-[70px] lg:h-[98px] w-full  w-[calc(100%-40px)]  max-w-[1440px] mx-auto  top-0 py-4 flex items-center justify-between relative z-[99999]"
+    : "bg-white border border-gray-300 rounded-full px-[18px] h-[70px] lg:h-[98px] flex w-full  w-[calc(100%-40px)]  max-w-[1440px] mx-auto top-0 py-4 items-center justify-between relative z-[99999]";
 
   const headerClasses = isAbsolute 
-    ? "fixed w-[calc(100%-40px)] top-0 left-[20px] z-[99999] flex justify-center py-4"
-    : "fixed  w-[calc(100%-40px)] left-[20px] flex justify-center py-4 z-[99999]";
+    ? "fixed w-full px-[20px] md:px-[40px] lg:px-[60px] z-[99999]  flex justify-center py-4"
+    : "fixed w-full  px-[20px] md:px-[40px] lg:px-[60px] mx-auto top-0 flex justify-center py-4 z-[99999]";
 
   const linkClasses = isDark
     ? "cursor-pointer py-[20px] text-white text-[16px] lg:text-[20px] hover:text-blue-400 transition-colors"

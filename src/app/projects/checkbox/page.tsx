@@ -9,7 +9,7 @@ const CheckboxPage = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Header Navigation */}
-      <Navbar variant="dark" isAbsolute={true} currentPage="portfolio" />
+      <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
       {/* Hero Section */}
       <div className="relative min-h-screen overflow-hidden">
@@ -32,7 +32,7 @@ const CheckboxPage = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl"
+              className="text-center"
             >
               <h1 className="text-[40px] md:text-[48px] font-bold text-white leading-tight">
                 Your Management Goals in One Place
@@ -87,14 +87,14 @@ const CheckboxPage = () => {
 
       {/* Overview Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[40px] font-semibold text-white text-center mb-[30px]">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-white text-center mb-[30px]">
               Overview
             </h2>
             <p className="text-[18px] md:text-[20px] leading-relaxed text-white/90">
@@ -109,7 +109,7 @@ const CheckboxPage = () => {
 
       {/* Introducing App Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ const CheckboxPage = () => {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <h2 className="text-[36px] md:text-[40px] font-semibold text-white mb-[40px] text-center">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-white mb-[40px] text-center">
               Introducing Easy Commute <span style={{ color: "#B388FF" }}>Mobile App</span>
             </h2>
             
@@ -182,14 +182,14 @@ const CheckboxPage = () => {
 
       {/* Objectives Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[30px] md:text-[34px] font-semibold text-white text-center mb-8">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-white text-center mb-8">
               Objectives we are trying to <span style={{ color: "#B388FF" }}>Solve for</span>
             </h2>
             <div className="space-y-6 text-[18px] leading-relaxed text-white/90">
@@ -208,14 +208,14 @@ const CheckboxPage = () => {
 
       {/* Solution Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[30px] md:text-[34px] font-semibold text-white text-center mb-8">Solution</h2>
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-white text-center mb-8">Solution</h2>
             <p className="text-[18px] leading-relaxed text-white/90 mb-6">
               We decided to develop a web application that helps place all the human resources management goals in one software.
               We solved the following problems in this version of the project:
@@ -235,14 +235,14 @@ const CheckboxPage = () => {
 
       {/* Design Thinking Process Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-center text-white mb-[60px]">
               Design Thinking <span style={{ color: "#B388FF" }}>Process</span>
             </h2>
             <div>
@@ -267,14 +267,14 @@ const CheckboxPage = () => {
 
       {/* Desk Research Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-center text-white mb-[60px]">
               Conducting <span style={{ color: "#B388FF" }}>Desk Research</span>
             </h2>
             <div>
@@ -299,14 +299,14 @@ const CheckboxPage = () => {
 
       {/* Flowchart Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-center text-white mb-[60px]">
               <span style={{ color: "#B388FF" }}>Flowchart</span>
             </h2>
             <div>
@@ -331,17 +331,17 @@ const CheckboxPage = () => {
 
       {/* Wireframes Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-center text-white mb-[60px]">
               Wireframes
             </h2>
-            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-center max-w-4xl mx-auto mb-8">
+                <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-left mb-8">
               The Sign-Up & Login Pages provide the user with a fast and easy process to register and
               enjoy the benefits of the software. The Sign Up with Google feature was also added as
               demanded from the User Research.
@@ -368,17 +368,17 @@ const CheckboxPage = () => {
 
       {/* Main Dashboard Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-center text-white mb-[60px]">
               Main <span style={{ color: "#B388FF" }}>Dashboard</span>
             </h2>
-            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-center max-w-4xl mx-auto mb-8">
+            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-left mx-auto mb-8">
               The Dashboard section conveys a summary of employee statistics, upcoming activities, and
               notifications. The salary statistics option on the dashboard is a unique feature of the
               platform. It provides insight into the company's spending on employee benefits.
@@ -405,17 +405,17 @@ const CheckboxPage = () => {
 
       {/* Payroll Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-center text-white mb-[60px]">
               Payroll
             </h2>
-            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-center max-w-4xl mx-auto mb-8">
+            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-left mx-auto mb-8">
               The payroll section gives general information about employees' pay and keeps track of their earnings.
               This feature eliminates the miscalculation of data and affords a system for managing payroll details automatically.
               With CheckBox, HR managers can easily generate salary statements, control payday, and ensure accuracy.
@@ -442,14 +442,14 @@ const CheckboxPage = () => {
 
       {/* Company Structure Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-center text-white mb-[60px]">
               Company <span style={{ color: "#B388FF" }}>Structure</span>
             </h2>
             <div>
@@ -474,17 +474,17 @@ const CheckboxPage = () => {
 
       {/* Report Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-center text-white mb-[60px]">
               Report
             </h2>
-            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-center max-w-4xl mx-auto mb-8">
+            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-left mx-auto mb-8">
               Promotes transparency and improves employees' engagement in the company's activities. The
               report generated helps the company make decisions on hiring costs, turnover rate,
               performance, etc.
@@ -511,14 +511,14 @@ const CheckboxPage = () => {
 
       {/* Projects Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-center text-white mb-[60px]">
               <span style={{ color: "#B388FF" }}>Projects</span>
             </h2>
             <div className="space-y-8">
@@ -557,17 +557,17 @@ const CheckboxPage = () => {
 
       {/* Accessories Management Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold text-center text-white mb-[60px]">
               Accessories <span style={{ color: "#B388FF" }}>Management</span>
             </h2>
-            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-center max-w-4xl mx-auto mb-8">
+            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-left mx-auto mb-8">
               Assign accessories and gadgets to employees, keep track of the gadget's health and easily find gadgets assigned to employees.
             </p>
             <div>
@@ -592,7 +592,7 @@ const CheckboxPage = () => {
 
       {/* Notifications Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -602,7 +602,7 @@ const CheckboxPage = () => {
             <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
               Notifications
             </h2>
-            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-center max-w-4xl mx-auto mb-8">
+            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-left mx-auto mb-8">
               View Notifications in real-time and stay abreast of the activities of employees. Get updates on new leave requests, payroll creation, attendance management, new clients, project deadlines, etc.
             </p>
             <div>
@@ -627,7 +627,7 @@ const CheckboxPage = () => {
 
       {/* Leave Management Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -637,7 +637,7 @@ const CheckboxPage = () => {
             <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
               Leave <span style={{ color: "#B388FF" }}>Management</span>
             </h2>
-            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-center max-w-4xl mx-auto mb-8">
+            <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-left mx-auto mb-8">
               View employees on leave, the duration of leave, the leave progress, and the type of leave. Also, an option to apply for leave on behalf of an employee, approve or decline leave requests.
             </p>
             <div>
@@ -662,7 +662,7 @@ const CheckboxPage = () => {
 
       {/* Typography Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -694,7 +694,7 @@ const CheckboxPage = () => {
 
       {/* Validation Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -704,11 +704,11 @@ const CheckboxPage = () => {
             <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
               Validation
             </h2>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-center mb-6">
+            <div className="mx-auto">
+              <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-left mb-6">
                 Easy Commute app should not become just a one-time delivery. It should be iterated by considering usability tests, A/B tests, and other in-depth surveys with the user to improve the initial version. That said, launching this functionality is only the first step toward the product's success.
               </p>
-              <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-center">
+              <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-left">
                 In this way, analysing metrics such as daily and monthly active users, bounce rate, churn rate, and retention rate, would be important for understanding success and elaborating the product roadmap.
               </p>
             </div>
@@ -718,7 +718,7 @@ const CheckboxPage = () => {
 
       {/* Major Takeaway from the Project Section */}
       <section className="py-20" style={{ backgroundColor: "#0E0F18" }}>
-        <div className="w-full max-w-[1440px] mx-auto px-20 md:px-[60px] lg:px-[120px]">
+        <div className="w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -728,8 +728,8 @@ const CheckboxPage = () => {
             <h2 className="text-[44px] font-semibold text-center text-white mb-[60px]">
               Major Takeaway from the <span style={{ color: "#B388FF" }}>Project</span>
             </h2>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-center">
+            <div className=" mx-auto">
+              <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-left">
                 Checkbox considerably solves many Human Resources Management problems and provides a seamless way of managing small and large organisations from one system. The next version would be updated with more features to improve the overall user experience and aesthetic beauty.
               </p>
             </div>
