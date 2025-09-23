@@ -53,10 +53,10 @@ const MovingWorkSection = () => {
           {/* Moving Text Content */}
           <motion.div
             className="flex items-center gap-6"
-            initial={{ x: '-100%' }}
+            initial={{ x: '-50%' }}
             animate={{ x: '100%' }}
             transition={{
-              duration: 250,
+              duration: 500,
               repeat: Infinity,
               ease: 'linear'
             }}

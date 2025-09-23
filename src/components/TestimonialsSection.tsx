@@ -32,7 +32,7 @@ const TestimonialsSection = () => {
   ];
 
   const accents = useMemo(() => (
-    Array.from({ length: 2 }).map(() => ({
+    Array.from({ length: 1 }).map(() => ({
       top: Math.random() * 80 + 5,
       left: Math.random() * 80 + 5,
       rotate: Math.random() * 60 - 30,

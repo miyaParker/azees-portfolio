@@ -12,7 +12,7 @@ const CineTripsPage = () => {
       <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
       {/* Hero Section */}
-      <section className="pt-[80px] lg:pt-[180px] mb-[120px] lg:mb-[150px] px-4 sm:px-8 relative h-max">
+      <section className="min-h-screen relative">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -27,24 +27,20 @@ const CineTripsPage = () => {
         </div>
 
         {/* Main content */}
-        <div className="w-full  relative z-10 flex flex-col min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-screen">
-          {/* Centered title */}
-          <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-5xl"
-            >
-              <h1 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:text-[54px] font-bold text-white leading-tight">
-                A simpler way to book cinema tickets and enjoy movies, anytime, anywhere.
-              </h1>
-            </motion.div>
-          </div>
+        <div className="w-full min-h-screen max-w-[1513px] mx-auto h-full relative z-10 flex flex-col items-center justify-center">
 
-          {/* Info bar */}
-          <div className="py-8 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#D70A84" }}>
-            <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex-1 text-center flex items-center justify-center w-full max-w-[1513px] mx-auto px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px]"
+          >
+            <h1 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:text-[54px] font-bold text-white leading-tight">
+              A simpler way to book cinema tickets and enjoy movies, anytime, anywhere.
+            </h1>
+          </motion.div>
+          <div className="w-full mt-auto py-8" style={{ backgroundColor: "#D70A84" }}>
+            <div className="w-full mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                 {/* Client */}
                 <motion.div
@@ -85,6 +81,7 @@ const CineTripsPage = () => {
             </div>
           </div>
         </div>
+
       </section>
 
       {/* Intro Section */}
@@ -109,12 +106,12 @@ const CineTripsPage = () => {
       </section>
 
       {/* Project Overview Section */}
-      <section className="w-full max-w-[1513px] overflow-hidden mx-auto py-20 px-[20px] md:px-[40px] xl:px-[80px] bg-white">
+      <section className="w-full max-w-[1513px] overflow-hidden mx-auto px-[20px] md:px-[40px] xl:px-[80px] bg-white">
         <div className="mx-auto">
           <div className="relative min-h-[600px] lg:min-h-[700px]">
             {/* Left Side - Project Details */}
             <motion.div
-              className="w-full min-[1280px]:max-w-[700px] min-[1440px]:max-w-[876px] space-y-8"
+              className="w-full lg:max-w-[60%] min-[1440px]:max-w-[876px] space-y-8"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
@@ -133,19 +130,19 @@ const CineTripsPage = () => {
 
               {/* Project Description */}
               <motion.div
-                className="space-y-6 text-gray-600 leading-relaxed"
+                className="space-y-6 text-gray-600 leading-relaxed text-justify"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] leading-relaxed">
+                <p className="text-[16px] sm:text-[18px] md:text-[18px] lg:text-[22px] xl:text-[24px] leading-relaxed">
                   CineTrips is a mobile-first cinema ticket booking app designed to simplify and modernise the movie-going experience. The project aimed to create an intuitive platform that allows users to discover films, view cinemas, choose seats, add food and drinks, and book tickets in just a few taps.
                 </p>
-                <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] leading-relaxed">
+                <p className="text-[16px] sm:text-[18px] md:text-[18px] lg:text-[22px] xl:text-[24px] leading-relaxed">
                   The app focuses on user experience with features like real-time seat selection, QR code ticketing for contactless entry, Latest movie thriller preview and smart recommendations based on location and viewing history. The design prioritises speed and usability, ensuring users can complete their booking journey efficiently.
                 </p>
-                <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] leading-relaxed">
+                <p className="text-[16px] sm:text-[18px] md:text-[18px] lg:text-[22px] xl:text-[24px] leading-relaxed">
                   This case study covers the end-to-end UX/UI design process, from user research and wireframing to prototyping and final visual design, with a strong emphasis on mobile responsiveness and tech-driven convenience.
                 </p>
               </motion.div>
@@ -172,16 +169,16 @@ const CineTripsPage = () => {
 
               {/* Project Details Grid */}
               <motion.div
-                className="flex flex-col xl:flex-row gap-8 xl:gap-16"
+                className="w-max lg:w-full mx-auto md:mx-0 flex flex-col sm:flex-row md:flex-col lg:flex-row gap-8"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
               >
                 {/* Left Side - My Role and Tools */}
-                <div className="mx-auto md:mx-0 flex flex-col space-y-4 md:space-y-8">
+                <div className="flex flex-col space-y-4 md:space-y-8 min-[1024px]:pb-32 min-[1280px]:pb-0">
                   {/* My Role */}
-                  <div className="space-y-4 w-full">
+                  <div className="space-y-4 w-max lg:w-full">
                     <div className="flex items-center space-x-3">
                       <div className="flex items-center justify-center">
                         <Image
@@ -194,11 +191,11 @@ const CineTripsPage = () => {
                       </div>
                       <h3 className="text-center md:text-left text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[28px] font-medium text-gray-900">My Role</h3>
                     </div>
-                    <p className="text-center md:text-left text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]" style={{ color: '#212121' }}>Lead UX/UI Designer</p>
+                    <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]" style={{ color: '#212121' }}>Lead UX/UI Designer</p>
                   </div>
 
                   {/* Tools Used */}
-                  <div className="space-y-4 sm:w-1/2 xl:w-full">
+                  <div className="space-y-4 ">
                     <div className="flex items-center space-x-3">
                       <Image
                         src="/projects/cinetrips/tools.png"
@@ -236,7 +233,7 @@ const CineTripsPage = () => {
                 </div>
 
                 {/* Right Side - My Responsibilities */}
-                <div className="mx-auto md:mx-0 space-y-4 xl:w-1/2">
+                <div className="space-y-4 w-max lg:w-1/2 xl:w-1/2">
                   <div className="flex items-center space-x-3">
                     <Image
                       src="/projects/cinetrips/tasks.png"
@@ -276,7 +273,7 @@ const CineTripsPage = () => {
             {/* Right Side - Mobile Mockup - Hidden on small screens, absolute on medium+ */}
             <motion.div
               className="hidden md:block md:absolute flex justify-center items-center
-                         md:right-0 md:-bottom-[230px] lg:-bottom-[280px] xl:-right-[100px] xl:-bottom-[140px]"
+                         md:right-0 md:-bottom-[200px] lg:top-0 xl:-right-[100px]"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -288,7 +285,7 @@ const CineTripsPage = () => {
                   alt="CineTrips Mobile Mockup"
                   width={535}
                   height={640}
-                  className="w-[320px] lg:w-[360px] xl:w-[480px] h-auto"
+                  className="w-[360px] lg:w-[360px] xl:w-[480px] h-auto"
                   priority
                 />
               </div>
@@ -676,7 +673,7 @@ const CineTripsPage = () => {
 
             {/* Right Side - iPhone Mockup (Absolute positioned for medium+ screens) */}
             <motion.div
-              className="hidden md:block absolute top-0 -right-[60px] z-10 md:w-[35%] md:top-1/2 md:-translate-y-1/2 z-5"
+              className="hidden md:block absolute top-0 -right-[60px] xl:-right-[80px] z-10 md:w-[35%] md:top-1/2 md:-translate-y-1/2 z-5"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -694,7 +691,7 @@ const CineTripsPage = () => {
 
             {/* Right Side - iPhone Mockup (Relative positioned for small screens) */}
             <motion.div
-              className="md:hidden flex justify-center mt-8"
+              className="md:hidden relative -right-[20px] flex justify-center mt-8"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -908,12 +905,12 @@ const CineTripsPage = () => {
             viewport={{ once: true }}
           >
             <div className="overflow-x-auto">
-              <table className="w-full border border-[#C50536]">
+              <table className="w-full min-w-[813px] border border-[#C50536]">
                 <thead>
                   <tr className="bg-[#FFF0F7]">
-                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[30px] font-semibold text-gray-900 w-1/3 max-w-[280px]">Brands</th>
-                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[30px] font-semibold text-gray-900 w-1/3">Strengths</th>
-                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[30px] font-semibold text-gray-900 w-1/3">Weaknesses</th>
+                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[20px] lg:text-[30px] font-semibold text-gray-900 w-1/5 max-w-[280px]">Brands</th>
+                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[20px] lg:text-[30px] font-semibold text-gray-900 w-2/5">Strengths</th>
+                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[20px] lg:text-[30px] font-semibold text-gray-900 w-2/5">Weaknesses</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1006,7 +1003,7 @@ const CineTripsPage = () => {
 
       {/* User Persona Section */}
       <section className="w-full max-w-[1513px] mx-auto py-20 px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] bg-white">
-        <div className="w-full mx-auto max-w-[1513px] px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px]">
+        <div className="w-full mx-auto max-w-[1513px] ">
           {/* Section Header */}
           <motion.div
             className="text-center mb-16"
@@ -1686,7 +1683,7 @@ const CineTripsPage = () => {
       </section>
 
       {/* High Fidelity Wireframes Section */}
-      <section className="pt-20 w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] mx-auto" style={{ backgroundColor: '#FFF4F7' }}>
+      <section className="py-20 w-full max-w-[1513px] px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] mx-auto" style={{ backgroundColor: '#FFF4F7' }}>
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -1706,7 +1703,7 @@ const CineTripsPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="relative"
+            className="relative top-15"
           >
             <div className="flex justify-center">
               <Image
@@ -1954,7 +1951,7 @@ const CineTripsPage = () => {
             viewport={{ once: true }}
             className="text-left mb-16"
           >
-            <h2 className="text-[34px] font-medium text-gray-900 mb-6 flex items-center gap-3">
+            <h2 className="text-[24px] lg:text-[34px] font-medium text-gray-900 mb-6 flex items-center gap-3">
               <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#D70A84' }}></div>
               <span className="text-gray-900">Logo & Icons</span>
             </h2>
@@ -1965,7 +1962,7 @@ const CineTripsPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="flex justify-center mb-16"
+            className="flex justify-center mb-16 w-full max-w-[200px] md:max-w-[400px] mx-auto"
           >
             <Image
               src="/projects/cinetrips/logo.png"
@@ -2083,7 +2080,7 @@ const CineTripsPage = () => {
       <section className="w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[80px]">
         <div className="max-w-[1513px] mx-auto bg-white py-[60px]">
           <div className="text-center mb-[24px]">
-            <h3 className="font-bold text-[44px] leading-[54px]">
+            <h3 className="font-bold text-[34px] lg:text-[44px] leading-[54px]">
               <span className="text-black">High Fidelity </span>
               <span className="text-[#C50536]">Prototype Link</span>
             </h3>
@@ -2093,7 +2090,7 @@ const CineTripsPage = () => {
               href="https://www.figma.com/proto/fiKhICMUKFiFDW0ENfgyru/CineTrips?page-id=133%3A195&node-id=133-2451&viewport=-6168%2C392%2C0.46&t=BP4ZstAgdWwAlFW6-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=133%3A2451&show-proto-sidebar=1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-[#0067A2] underline break-words break-all text-[28px] leading-[44px]"
+              className="inline-block text-[#0067A2] underline break-words break-all text-[20px] lg:text-[28px] leading-[150%]"
             >
               https://www.figma.com/proto/fiKhICMUKFiFDW0ENfgyru/CineTrips?page-id=133%3A195&node-id=133-2451&viewport=-6168%2C392%2C0.46&t=BP4ZstAgdWwAlFW6-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=133%3A2451&show-proto-sidebar=1
             </a>

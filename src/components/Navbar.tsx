@@ -24,8 +24,8 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
     : "fixed w-full  px-[20px] md:px-[40px] lg:px-[60px] mx-auto top-0 flex justify-center py-4 z-[99999]";
 
   const linkClasses = isDark
-    ? "cursor-pointer py-[20px] text-white text-[16px] lg:text-[20px] hover:text-blue-400 transition-colors"
-    : "cursor-pointer text-gray-600 hover:text-[#03A3CC] transition-colors text-[16px] lg:text-[20px]";
+    ? "cursor-pointer py-[20px] text-white text-[18px] xl:text-[20px] hover:text-blue-400 transition-colors"
+    : "cursor-pointer text-gray-600 hover:text-[#03A3CC] transition-colors text-[18px] xl:text-[20px]";
 
   const activeLinkClasses = isDark
     ? "cursor-pointer bg-[#03A3CC] px-[20px] lg:px-[40px] py-[20px] rounded-full text-white text-[16px] lg:text-[20px] font-medium"
@@ -55,7 +55,7 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
           <>
            {/* Mobile Menu Button */}
           
-            <motion.div 
+            <Link href="/"><motion.div 
               className="flex items-center lg:hidden"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
@@ -68,7 +68,7 @@ const Navbar = ({ variant = 'light', isAbsolute = false, currentPage }: NavbarPr
                 height={44}
                 className="h-6 lg:h-8 w-auto"
               />
-            </motion.div>
+            </motion.div></Link>
             <button
               className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-800 transition-colors cursor-pointer"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

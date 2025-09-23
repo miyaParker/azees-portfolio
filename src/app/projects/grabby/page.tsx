@@ -26,7 +26,7 @@ const GrabbyPage = () => {
         </div>
 
         {/* Project Details Footer */}
-        <div className="relative z-10 bg-red-500 py-16">
+        <div className="relative z-10 bg-[#C50536] py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               {/* Client */}
@@ -69,7 +69,7 @@ const GrabbyPage = () => {
         </div>
       </section>
 
-    
+
 
       {/* Intro Image Section */}
       <section className="relative py-20 bg-white">
@@ -99,7 +99,7 @@ const GrabbyPage = () => {
           <div className="relative min-h-[600px] lg:min-h-[700px]">
             {/* Left Side - Project Details */}
             <motion.div
-              className="w-full min-[1280px]:max-w-[700px] min-[1440px]:max-w-[876px] space-y-8"
+              className="w-full lg:max-w-[70%] space-y-8"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
@@ -107,18 +107,18 @@ const GrabbyPage = () => {
             >
               {/* Project Overview Title */}
               <motion.h2
-                className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] font-bold text-red-500"
+                className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] font-bold text-[#C50536]"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <span className="text-red-500">Project</span> <span className="text-red-500">Overview</span>
+                <span className="text-[#C50536]">Project Overview</span>
               </motion.h2>
 
               {/* Project Description */}
               <motion.div
-                className="space-y-6 text-black leading-relaxed"
+                className="space-y-6 text-black text-justify leading-relaxed"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -149,7 +149,7 @@ const GrabbyPage = () => {
                     alt="Grabby Mobile Mockup"
                     width={535}
                     height={640}
-                    className="w-[300px] sm:w-[350px] h-auto"
+                    className="w-[300px] sm:w-[450px] h-auto relative -translate-x-[20%]"
                     priority
                   />
                 </div>
@@ -157,16 +157,16 @@ const GrabbyPage = () => {
 
               {/* Project Details Grid */}
               <motion.div
-                className="flex flex-col xl:flex-row gap-8 xl:gap-16"
+                className="w-max lg:w-full mx-auto md:mx-0 flex flex-col sm:flex-row md:flex-col lg:flex-row gap-8"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
               >
                 {/* Left Side - My Role and Tools */}
-                <div className="mx-auto md:mx-0 flex flex-col sm:flex-row xl:flex-col space-y-8 sm:space-y-0 sm:space-x-8 xl:space-x-0 xl:space-y-8 w-1/2">
+                <div className="flex flex-col space-y-4 md:space-y-8 min-[1024px]:pb-32 min-[1280px]:pb-0">
                   {/* My Role */}
-                  <div className="space-y-4 sm:w-1/2 xl:w-full">
+                  <div className="space-y-4 w-max lg:w-full">
                     <div className="flex items-center space-x-3">
                       <div className="flex items-center justify-center">
                         <Image
@@ -177,13 +177,13 @@ const GrabbyPage = () => {
                           className="w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] md:w-[32px] md:h-[32px] lg:w-[36px] lg:h-[36px] xl:w-[40px] xl:h-[40px]"
                         />
                       </div>
-                      <h3 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[28px] font-bold text-black">My Role</h3>
+                      <h3 className="text-center md:text-left text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[28px] font-medium text-gray-900">My Role</h3>
                     </div>
-                    <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px] text-black">Solo UX/UI Designer</p>
+                    <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]" style={{ color: '#212121' }}>Lead UX/UI Designer</p>
                   </div>
 
                   {/* Tools Used */}
-                  <div className="space-y-4 sm:w-1/2 xl:w-full">
+                  <div className="space-y-4 ">
                     <div className="flex items-center space-x-3">
                       <Image
                         src="/projects/cinetrips/tools.png"
@@ -192,7 +192,7 @@ const GrabbyPage = () => {
                         height={64}
                         className="w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] md:w-[32px] md:h-[32px] lg:w-[36px] lg:h-[36px] xl:w-[40px] xl:h-[40px]"
                       />
-                      <h3 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[28px] font-bold text-black">Tools Used</h3>
+                      <h3 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[28px] font-medium text-gray-900">Tools Used</h3>
                     </div>
                     <div className="flex space-x-3">
                       <Image
@@ -200,7 +200,7 @@ const GrabbyPage = () => {
                         alt="Figma"
                         width={41}
                         height={63}
-                        className="w-[20px] h-[30px] sm:w-[24px] sm:h-[36px] md:w-[28px] md:h-[42px] lg:w-[32px] lg:h-[48px] xl:w-[36px] xl:h-[54px]"
+                        className="w-[15px] h-[24px] sm:w-[19px] sm:h-[28px] md:w-[28px] md:h-[42px] lg:w-[27px] lg:h-[36px] xl:w-[31px] xl:h-[40px]"
                       />
                       <Image
                         src="/projects/cinetrips/photoshop.png"
@@ -220,10 +220,8 @@ const GrabbyPage = () => {
                   </div>
                 </div>
 
-
-
                 {/* Right Side - My Responsibilities */}
-                <div className="mx-auto md:mx-0 space-y-4 xl:w-1/2">
+                <div className="space-y-4 w-max lg:w-1/2 xl:w-1/2">
                   <div className="flex items-center space-x-3">
                     <Image
                       src="/projects/cinetrips/tasks.png"
@@ -232,27 +230,27 @@ const GrabbyPage = () => {
                       height={64}
                       className="w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] md:w-[32px] md:h-[32px] lg:w-[36px] lg:h-[36px] xl:w-[40px] xl:h-[40px]"
                     />
-                    <h3 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[28px] font-bold text-black">My Responsibilities</h3>
+                    <h3 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[28px] font-medium text-gray-900">My Responsibilities</h3>
                   </div>
-                  <ul className="space-y-2 text-black">
+                  <ul className="space-y-2" style={{ color: '#212121' }}>
                     <li className="flex items-center text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]">
-                      <span className="w-[6px] h-[6px] sm:w-[7px] sm:h-[7px] md:w-[8px] md:h-[8px] lg:w-[9px] lg:h-[9px] xl:w-[10px] xl:h-[10px] bg-red-500 rounded-full mr-3"></span>
+                      <span className="w-[6px] h-[6px] sm:w-[7px] sm:h-[7px] md:w-[8px] md:h-[8px] lg:w-[9px] lg:h-[9px] xl:w-[10px] xl:h-[10px] bg-[#C50536] rounded-full mr-3"></span>
                       UX Researcher
                     </li>
                     <li className="flex items-center text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]">
-                      <span className="w-[6px] h-[6px] sm:w-[7px] sm:h-[7px] md:w-[8px] md:h-[8px] lg:w-[9px] lg:h-[9px] xl:w-[10px] xl:h-[10px] bg-red-500 rounded-full mr-3"></span>
+                      <span className="w-[6px] h-[6px] sm:w-[7px] sm:h-[7px] md:w-[8px] md:h-[8px] lg:w-[9px] lg:h-[9px] xl:w-[10px] xl:h-[10px] bg-[#C50536] rounded-full mr-3"></span>
                       UX Designer
                     </li>
                     <li className="flex items-center text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]">
-                      <span className="w-[6px] h-[6px] sm:w-[7px] sm:h-[7px] md:w-[8px] md:h-[8px] lg:w-[9px] lg:h-[9px] xl:w-[10px] xl:h-[10px] bg-red-500 rounded-full mr-3"></span>
+                      <span className="w-[6px] h-[6px] sm:w-[7px] sm:h-[7px] md:w-[8px] md:h-[8px] lg:w-[9px] lg:h-[9px] xl:w-[10px] xl:h-[10px] bg-[#C50536] rounded-full mr-3"></span>
                       UX Writer
                     </li>
                     <li className="flex items-center text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]">
-                      <span className="w-[6px] h-[6px] sm:w-[7px] sm:h-[7px] md:w-[8px] md:h-[8px] lg:w-[9px] lg:h-[9px] xl:w-[10px] xl:h-[10px] bg-red-500 rounded-full mr-3"></span>
+                      <span className="w-[6px] h-[6px] sm:w-[7px] sm:h-[7px] md:w-[8px] md:h-[8px] lg:w-[9px] lg:h-[9px] xl:w-[10px] xl:h-[10px] bg-[#C50536] rounded-full mr-3"></span>
                       UI Designer
                     </li>
                     <li className="flex items-center text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]">
-                      <span className="w-[6px] h-[6px] sm:w-[7px] sm:h-[7px] md:w-[8px] md:h-[8px] lg:w-[9px] lg:h-[9px] xl:w-[10px] xl:h-[10px] bg-red-500 rounded-full mr-3"></span>
+                      <span className="w-[6px] h-[6px] sm:w-[7px] sm:h-[7px] md:w-[8px] md:h-[8px] lg:w-[9px] lg:h-[9px] xl:w-[10px] xl:h-[10px] bg-[#C50536] rounded-full mr-3"></span>
                       Brand Identity Designer
                     </li>
                   </ul>
@@ -260,11 +258,10 @@ const GrabbyPage = () => {
               </motion.div>
             </motion.div>
 
-
             {/* Right Side - Mobile Mockup - Hidden on small screens, absolute on medium+ */}
             <motion.div
               className="hidden md:block md:absolute flex justify-center items-center
-                         md:right-0 md:-bottom-[230px] lg:-bottom-[280px] xl:-right-[100px] xl:-bottom-[140px]"
+                         md:right-0 md:-bottom-[100px] lg:top-0 lg:-right-[90px] xl:-right-[110px]"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -276,7 +273,7 @@ const GrabbyPage = () => {
                   alt="Grabby Mobile Mockup"
                   width={535}
                   height={640}
-                  className="w-[550px] lg:w-[660px] xl:w-[1000px] h-auto"
+                  className="w-[550px] lg:w-[660px] xl:w-[800px] h-auto"
                   priority
                 />
               </div>
@@ -309,10 +306,10 @@ const GrabbyPage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-<h2 className="text-[28px] md:text-[36px] lg:text-[44px] xl:text-[48px] font-bold text-black">
-                Problem <span className="text-red-500">Statement</span>
+              <h2 className="text-[28px] md:text-[36px] lg:text-[44px] xl:text-[48px] font-bold text-black">
+                Problem <span className="text-[#C50536]">Statement</span>
               </h2>
-<p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] text-black leading-relaxed max-w-[640px]">
+              <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] text-black leading-relaxed max-w-[640px]">
                 Many online shoppers struggle to find a reliable and user-friendly e‑commerce app that offers
                 a seamless shopping experience, with clear product listings and an easy checkout process.
                 Additionally, many users are hesitant to bid on items online, as they may not understand the
@@ -336,8 +333,8 @@ const GrabbyPage = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-<h2 className="text-[28px] md:text-[36px] lg:text-[44px] xl:text-[48px] font-bold text-black">
-                Possible <span className="text-red-500">Solution</span>
+              <h2 className="text-[28px] md:text-[36px] lg:text-[44px] xl:text-[48px] font-bold text-black">
+                Possible <span className="text-[#C50536]">Solution</span>
               </h2>
               <div className="space-y-4 text-[16px] lg:text-[18px] xl:text-[20px] text-black leading-relaxed">
                 <p>
@@ -373,16 +370,16 @@ const GrabbyPage = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center justify-center space-x-4 mb-6">
-              <div className="w-8 h-8 flex items-center justify-center">
-                <Image
-                  src="/projects/cinetrips/recovery-convert.png"
-                  alt="Design Thinking Process Icon"
-                  width={32}
-                  height={32}
-                  className="w-8 h-8"
-                />
-              </div>
-<h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold text-purple-900">
+
+              <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold text-black">
+                <svg className="inline-block mr-1 w-[24px] md:w-[32px] lg:w-[55px] lg:h-auto" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M34.3161 29.0376V35.8888C34.3161 41.6095 32.0329 43.8962 26.3111 43.8962H19.485C13.7879 43.8962 11.4791 41.6095 11.4791 35.8888V29.0376C11.4791 23.3424 13.7633 21.0557 19.485 21.0557H26.3357C32.0329 21.0557 34.3161 23.3424 34.3161 29.0376Z" stroke="#C50536" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M44.1037 19.2537V26.1048C44.1037 31.8256 41.8196 34.1038 36.0978 34.1038H34.3161V29.0376C34.3161 23.3424 32.0328 21.0557 26.311 21.0557H21.2667V19.2537C21.2667 13.5329 23.55 11.2717 29.2718 11.2717H36.1233C41.8196 11.2717 44.1037 13.5584 44.1037 19.2537Z" stroke="#C50536" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M52.8875 35.1068C52.8875 44.8227 45.0321 52.677 35.3201 52.677L37.9553 48.2824" stroke="#C50536" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M2.69531 20.0526C2.69531 10.3452 10.5508 2.49097 20.2628 2.49097L17.6276 6.87708" stroke="#C50536" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+
                 <span className="text-[#C50536]">Design Thinking</span> Process
               </h2>
             </div>
@@ -787,7 +784,7 @@ const GrabbyPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-<h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold">
               <span className="text-black">Empathize </span>
               <span className="text-[#C50536]">Phase</span>
             </h2>
@@ -875,8 +872,8 @@ const GrabbyPage = () => {
                 "Personalization and recommendation features can enhance the user experience, with users looking for customized recommendations based on their browsing and purchase history."
               ].map((insight, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                    <div className="relative mt-3 flex-shrink-0">
-                      <span className="relative block w-2 h-2 bg-black rounded-full shrink-0"></span>
+                  <div className="relative mt-3 flex-shrink-0">
+                    <span className="relative block w-2 h-2 bg-black rounded-full shrink-0"></span>
                   </div>
                   <p className="text-gray-700 text-[18px] md:text-[20px] leading-relaxed text-justify">{insight}</p>
                 </div>
@@ -897,7 +894,7 @@ const GrabbyPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-<h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold mb-6">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold mb-6">
               <span className="text-gray-900">Competitive </span>
               <span className="text-[#C50536]">Audit</span>
             </h2>
@@ -966,12 +963,12 @@ const GrabbyPage = () => {
                   </defs>
                 </svg>
               </div>
-              <table className="w-full border border-[#C50536] relative z-20  mx-auto">
+              <table className="w-full border border-[#C50536] relative z-20  mx-auto min-w-[813px]">
                 <thead>
-                  <tr className="bg-[#FFF0F7]">
-                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[30px] font-semibold text-gray-900 w-1/3 max-w-[280px] bg-[#FFD0DD]">Brands</th>
-                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[30px] font-semibold text-gray-900 w-1/3">Strengths</th>
-                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[30px] font-semibold text-gray-900 w-1/3">Weaknesses</th>
+                  <tr className="bg-[#FFF0F7] ">
+                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[20px] lg:text-[30px] font-semibold text-gray-900 w-1/5 max-w-[280px] bg-[#FFD0DD]">Brands</th>
+                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[20px] lg:text-[30px] font-semibold text-gray-900 w-2/5">Strengths</th>
+                    <th className="border border-[#C50536] px-6 py-5 xl:h-[170px] text-center text-[20px] lg:text-[30px] font-semibold text-gray-900 w-2/5">Weaknesses</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1045,7 +1042,7 @@ const GrabbyPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-<h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold mb-4">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold mb-4">
               <span className="text-black">User </span>
               <span className="text-[#C50536]">Persona</span>
             </h2>
@@ -1142,8 +1139,8 @@ const GrabbyPage = () => {
                     <h4 className="text-[22px] font-bold text-[#C50536]">Goals</h4>
                   </div>
                   <ul className="space-y-2 text-gray-800">
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Buy goods online conveniently from the comfort of your home.</span></li>
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Time management and ease of delivery.</span></li>
+                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Buy goods online conveniently from the comfort of your home.</span></li>
+                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Time management and ease of delivery.</span></li>
                   </ul>
                 </div>
 
@@ -1159,10 +1156,10 @@ const GrabbyPage = () => {
                     <h4 className="text-[22px] font-bold text-[#C50536]">Frustrations</h4>
                   </div>
                   <ul className="space-y-2 text-gray-800">
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Faulty payment gateways.</span></li>
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Limited payment options.</span></li>
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Lack of quality items being delivered.</span></li>
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Delayed delivery.</span></li>
+                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Faulty payment gateways.</span></li>
+                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Limited payment options.</span></li>
+                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Lack of quality items being delivered.</span></li>
+                    <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#C50536] shrink-0"></span><span>Delayed delivery.</span></li>
                   </ul>
                 </div>
 
@@ -1289,9 +1286,9 @@ const GrabbyPage = () => {
                   <h4 className="text-[22px] font-bold text-[#FF7300]">Goals</h4>
                 </div>
                 <ul className="space-y-2 text-gray-800">
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Price range.</span></li>
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Diversity of brands.</span></li>
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Availability of goods.</span></li>
+                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Price range.</span></li>
+                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Diversity of brands.</span></li>
+                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Availability of goods.</span></li>
                 </ul>
               </div>
 
@@ -1307,9 +1304,9 @@ const GrabbyPage = () => {
                   <h4 className="text-[22px] font-bold text-[#FF7300]">Frustrations</h4>
                 </div>
                 <ul className="space-y-2 text-gray-800">
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Item ordered doesn’t match description.</span></li>
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Delayed delivery.</span></li>
-              <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>App is not user friendly and too slow.</span></li>
+                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Item ordered doesn’t match description.</span></li>
+                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Delayed delivery.</span></li>
+                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>App is not user friendly and too slow.</span></li>
                 </ul>
               </div>
 
@@ -1364,7 +1361,7 @@ const GrabbyPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-<h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold mb-6">
+            <h2 className="text-[28px] md:text-[36px] lg:text-[44px] font-bold mb-6 relative z-20">
               <span className="text-gray-900">Empathy </span>
               <span className="text-[#C50536]">Mapping</span>
             </h2>
@@ -1534,7 +1531,7 @@ const GrabbyPage = () => {
               <span className='text-black'>User Task </span><span className='text-[#C50536]'>Flow</span>
             </h2>
             <div className="mt-4 flex items-start gap-3">
-              <span className="mt-[10px] inline-block w-3 h-3 rounded-full bg-[#FF7A00]"></span>
+              <span className="mt-[10px] inline-block w-3 h-3 rounded-full bg-[#FF7A00] shrink-0"></span>
               <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
                 The Process of users take to purchase item on Grabby
               </p>
@@ -1655,8 +1652,8 @@ const GrabbyPage = () => {
                     <span className="font-light text-black">Poppins Light</span>
                     <span className="font-semibold text-black">Poppins SemiBold</span>
                     <span className="font-normal text-black">Poppins Regular</span>
-              </div>
-            </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -1674,7 +1671,7 @@ const GrabbyPage = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
                   {/* Primary Colour */}
                   <div className="flex flex-col items-center space-y-3">
-                    <svg width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-[80px] md:w-[100px] lg:w-[140px] h-auto" width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M63.9653 0.1651C99.833 -0.908191 129.283 28.608 137.994 63.49C145.232 92.3794 122.13 116.886 97.2921 133.343C76.2226 147.385 49.473 150.426 28.713 136.026C6.58978 120.642 -3.9615 93.7207 2.80876 67.6039C11.2371 35.1368 30.4302 1.23839 63.9653 0.1651Z" fill="#19002D" />
                     </svg>
                     <div className="text-center">
@@ -1685,7 +1682,7 @@ const GrabbyPage = () => {
 
                   {/* Secondary Colour */}
                   <div className="flex flex-col items-center space-y-3">
-                    <svg width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-[80px] md:w-[100px] lg:w-[140px] h-auto" width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M63.9653 0.1651C99.833 -0.908191 129.283 28.608 137.994 63.49C145.232 92.3794 122.13 116.886 97.2921 133.343C76.2226 147.385 49.473 150.426 28.713 136.026C6.58978 120.642 -3.9615 93.7207 2.80876 67.6039C11.2371 35.1368 30.4302 1.23839 63.9653 0.1651Z" fill="#C50536" />
                     </svg>
                     <div className="text-center">
@@ -1696,7 +1693,7 @@ const GrabbyPage = () => {
 
                   {/* In App Colour 1 */}
                   <div className="flex flex-col items-center space-y-3">
-                    <svg width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-[80px] md:w-[100px] lg:w-[140px] h-auto" width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M63.9653 0.1651C99.833 -0.908191 129.283 28.608 137.994 63.49C145.232 92.3794 122.13 116.886 97.2921 133.343C76.2226 147.385 49.473 150.426 28.713 136.026C6.58978 120.642 -3.9615 93.7207 2.80876 67.6039C11.2371 35.1368 30.4302 1.23839 63.9653 0.1651Z" fill="#2A004C" />
                     </svg>
                     <div className="text-center">
@@ -1707,7 +1704,7 @@ const GrabbyPage = () => {
 
                   {/* In App Colour 2 */}
                   <div className="flex flex-col items-center space-y-3">
-                    <svg width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-[80px] md:w-[100px] lg:w-[140px] h-auto" width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M63.9653 0.1651C99.833 -0.908191 129.283 28.608 137.994 63.49C145.232 92.3794 122.13 116.886 97.2921 133.343C76.2226 147.385 49.473 150.426 28.713 136.026C6.58978 120.642 -3.9615 93.7207 2.80876 67.6039C11.2371 35.1368 30.4302 1.23839 63.9653 0.1651Z" fill="#52336C" />
                     </svg>
                     <div className="text-center">
@@ -1718,7 +1715,7 @@ const GrabbyPage = () => {
 
                   {/* Success Colour */}
                   <div className="flex flex-col items-center space-y-3">
-                    <svg width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-[80px] md:w-[100px] lg:w-[140px] h-auto" width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M63.9653 0.1651C99.833 -0.908191 129.283 28.608 137.994 63.49C145.232 92.3794 122.13 116.886 97.2921 133.343C76.2226 147.385 49.473 150.426 28.713 136.026C6.58978 120.642 -3.9615 93.7207 2.80876 67.6039C11.2371 35.1368 30.4302 1.23839 63.9653 0.1651Z" fill="#0DBF0D" />
                     </svg>
                     <div className="text-center">
@@ -1729,7 +1726,7 @@ const GrabbyPage = () => {
 
                   {/* Text Color 1 */}
                   <div className="flex flex-col items-center space-y-3">
-                    <svg width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-[80px] md:w-[100px] lg:w-[140px] h-auto" width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M63.9653 0.1651C99.833 -0.908191 129.283 28.608 137.994 63.49C145.232 92.3794 122.13 116.886 97.2921 133.343C76.2226 147.385 49.473 150.426 28.713 136.026C6.58978 120.642 -3.9615 93.7207 2.80876 67.6039C11.2371 35.1368 30.4302 1.23839 63.9653 0.1651Z" fill="#FFFFFF" />
                     </svg>
                     <div className="text-center">
@@ -1740,7 +1737,7 @@ const GrabbyPage = () => {
 
                   {/* Text Color 2 */}
                   <div className="flex flex-col items-center space-y-3">
-                    <svg width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-[80px] md:w-[100px] lg:w-[140px] h-auto" width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M63.9653 0.1651C99.833 -0.908191 129.283 28.608 137.994 63.49C145.232 92.3794 122.13 116.886 97.2921 133.343C76.2226 147.385 49.473 150.426 28.713 136.026C6.58978 120.642 -3.9615 93.7207 2.80876 67.6039C11.2371 35.1368 30.4302 1.23839 63.9653 0.1651Z" fill="#D2D2D2" />
                     </svg>
                     <div className="text-center">
@@ -1751,7 +1748,7 @@ const GrabbyPage = () => {
 
                   {/* Error Colour */}
                   <div className="flex flex-col items-center space-y-3">
-                    <svg width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-[80px] md:w-[100px] lg:w-[140px] h-auto" width="140" height="146" viewBox="0 0 140 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M63.9653 0.1651C99.833 -0.908191 129.283 28.608 137.994 63.49C145.232 92.3794 122.13 116.886 97.2921 133.343C76.2226 147.385 49.473 150.426 28.713 136.026C6.58978 120.642 -3.9615 93.7207 2.80876 67.6039C11.2371 35.1368 30.4302 1.23839 63.9653 0.1651Z" fill="#C50536" />
                     </svg>
                     <div className="text-center">
@@ -1766,10 +1763,10 @@ const GrabbyPage = () => {
             {/* Logo & Icons Section */}
             <div className="w-full max-w-[1513px] mx-auto">
               <div className="bg-[#FF7300]/5 py-20 px-[20px] sm:px-[40px] lg:px-[80px] w-full max-w-[1513px] mx-auto">
-              <div className="flex items-center space-x-3 mb-8">
-                      <div className="w-3 h-3 bg-[#C50536] rounded-full"></div>
-                <h3 className="text-2xl font-bold text-black">Logo & Icons</h3>
-              </div>
+                <div className="flex items-center space-x-3 mb-8">
+                  <div className="w-3 h-3 bg-[#C50536] rounded-full"></div>
+                  <h3 className="text-2xl font-bold text-black">Logo & Icons</h3>
+                </div>
                 {/* Grabby Logo */}
                 <div className="flex items-center justify-start mb-12">
                   <Image
@@ -2034,7 +2031,7 @@ const GrabbyPage = () => {
             </div>
 
           </motion.div>
-                    </div>
+        </div>
       </section>
 
       {/* High Fidelity Prototype Link Section */}
@@ -2058,8 +2055,8 @@ const GrabbyPage = () => {
           </div>
         </div>
       </section>
-  {/* Lessons & Next Steps Section */}
-  <section className="w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[80px]">
+      {/* Lessons & Next Steps Section */}
+      <section className="w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[80px]">
         <div className="max-w-[1513px] mx-auto bg-[#FFFBF8] py-[80px] px-[20px] sm:px-[40px] lg:px-[80px]">
           {/* Title */}
           <div className="text-center mb-[40px]">
@@ -2071,17 +2068,17 @@ const GrabbyPage = () => {
 
           {/* Content */}
           <div className="grid grid-cols-1 gap-[80px]">
-            
+
             {/* Lessons Learned */}
             <div>
               <div className="flex items-center gap-[12px] mb-[24px]">
                 <span className="inline-flex items-center justify-center">
                   <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M28.1195 54.5784C42.8856 54.5784 54.856 42.6077 54.856 27.8421C54.856 13.0764 42.8856 1.10742 28.1195 1.10742C13.3533 1.10742 1.38293 13.0764 1.38293 27.8421C1.38293 42.6077 13.3533 54.5784 28.1195 54.5784Z" fill="#C50536" fillOpacity="0.05" stroke="#C50536" strokeWidth="2"/>
-                    <path d="M42.052 34.473V17.6416C42.052 15.9415 40.6868 14.7525 39.0283 14.8375H38.945C36.0191 15.0925 31.5749 16.6229 29.0945 18.153L28.8581 18.3223C28.4535 18.5773 27.7854 18.5773 27.3807 18.3223L27.033 18.0666C24.5526 16.5366 20.1221 15.0925 17.1963 14.8375C15.5383 14.6675 14.1868 15.9415 14.1868 17.6416V34.473C14.1868 35.7481 15.2736 37.0225 16.6111 37.1925L17.0151 37.2788C20.0385 37.7038 24.7056 39.2339 27.3807 40.6789H27.4368C27.8126 40.9339 28.4119 40.9339 28.774 40.6789C31.4491 39.2339 36.1305 37.7038 39.1677 37.2788L39.6276 37.1925C40.9656 37.0225 42.052 35.7481 42.052 34.473Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M28.1194 18.7461V39.6567" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path opacity="0.2" d="M22.1979 22.9121H19.0632" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M23.2434 27.1621H19.0632" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M28.1195 54.5784C42.8856 54.5784 54.856 42.6077 54.856 27.8421C54.856 13.0764 42.8856 1.10742 28.1195 1.10742C13.3533 1.10742 1.38293 13.0764 1.38293 27.8421C1.38293 42.6077 13.3533 54.5784 28.1195 54.5784Z" fill="#C50536" fillOpacity="0.05" stroke="#C50536" strokeWidth="2" />
+                    <path d="M42.052 34.473V17.6416C42.052 15.9415 40.6868 14.7525 39.0283 14.8375H38.945C36.0191 15.0925 31.5749 16.6229 29.0945 18.153L28.8581 18.3223C28.4535 18.5773 27.7854 18.5773 27.3807 18.3223L27.033 18.0666C24.5526 16.5366 20.1221 15.0925 17.1963 14.8375C15.5383 14.6675 14.1868 15.9415 14.1868 17.6416V34.473C14.1868 35.7481 15.2736 37.0225 16.6111 37.1925L17.0151 37.2788C20.0385 37.7038 24.7056 39.2339 27.3807 40.6789H27.4368C27.8126 40.9339 28.4119 40.9339 28.774 40.6789C31.4491 39.2339 36.1305 37.7038 39.1677 37.2788L39.6276 37.1925C40.9656 37.0225 42.052 35.7481 42.052 34.473Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M28.1194 18.7461V39.6567" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path opacity="0.2" d="M22.1979 22.9121H19.0632" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M23.2434 27.1621H19.0632" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
                 <h3 className="text-[28px] leading-[34px] font-bold text-black">Lessons Learned</h3>
@@ -2107,11 +2104,11 @@ const GrabbyPage = () => {
               <div className="flex items-center gap-[12px] mb-[24px]">
                 <span className="inline-flex items-center justify-center">
                   <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M28.1195 54.8964C42.8856 54.8964 54.856 42.9258 54.856 28.1601C54.856 13.3945 42.8856 1.42383 28.1195 1.42383C13.3533 1.42383 1.38293 13.3945 1.38293 28.1601C1.38293 42.9258 13.3533 54.8964 28.1195 54.8964Z" fill="#C50536" fillOpacity="0.05" stroke="#C50536" strokeWidth="2"/>
-                    <path d="M18.0879 39.2949H38.151" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M20.9859 24.1641H19.2025C18.5894 24.1641 18.0879 24.6731 18.0879 25.2681V34.8742C18.0879 35.4692 18.5894 35.9782 19.2025 35.9782H20.9859C21.5988 35.9782 22.1 35.4692 22.1 34.8742V25.2681C22.1 24.6731 21.5988 24.1641 20.9859 24.1641Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M29.0112 20.5938H27.2277C26.6148 20.5938 26.1133 21.1044 26.1133 21.6995V34.875C26.1133 35.4701 26.6148 35.9791 27.2277 35.9791H29.0112C29.6241 35.9791 30.1256 35.4701 30.1256 34.875V21.6995C30.1256 21.1044 29.6241 20.5938 29.0112 20.5938Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M37.0367 17.0234H35.2532C34.6403 17.0234 34.1379 17.5325 34.1379 18.1275V34.8742C34.1379 35.4692 34.6403 35.9783 35.2532 35.9783H37.0367C37.6496 35.9783 38.1511 35.4692 38.1511 34.8742V18.1275C38.1511 17.5325 37.6496 17.0234 37.0367 17.0234Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M28.1195 54.8964C42.8856 54.8964 54.856 42.9258 54.856 28.1601C54.856 13.3945 42.8856 1.42383 28.1195 1.42383C13.3533 1.42383 1.38293 13.3945 1.38293 28.1601C1.38293 42.9258 13.3533 54.8964 28.1195 54.8964Z" fill="#C50536" fillOpacity="0.05" stroke="#C50536" strokeWidth="2" />
+                    <path d="M18.0879 39.2949H38.151" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M20.9859 24.1641H19.2025C18.5894 24.1641 18.0879 24.6731 18.0879 25.2681V34.8742C18.0879 35.4692 18.5894 35.9782 19.2025 35.9782H20.9859C21.5988 35.9782 22.1 35.4692 22.1 34.8742V25.2681C22.1 24.6731 21.5988 24.1641 20.9859 24.1641Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M29.0112 20.5938H27.2277C26.6148 20.5938 26.1133 21.1044 26.1133 21.6995V34.875C26.1133 35.4701 26.6148 35.9791 27.2277 35.9791H29.0112C29.6241 35.9791 30.1256 35.4701 30.1256 34.875V21.6995C30.1256 21.1044 29.6241 20.5938 29.0112 20.5938Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M37.0367 17.0234H35.2532C34.6403 17.0234 34.1379 17.5325 34.1379 18.1275V34.8742C34.1379 35.4692 34.6403 35.9783 35.2532 35.9783H37.0367C37.6496 35.9783 38.1511 35.4692 38.1511 34.8742V18.1275C38.1511 17.5325 37.6496 17.0234 37.0367 17.0234Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
                 <h3 className="text-[28px] leading-[34px] font-bold text-[#C50536]">Next Steps</h3>
