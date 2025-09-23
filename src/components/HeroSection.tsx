@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <div className="w-full max-w-[1513px] mb-10 xl:mb-20 mx-auto pt-[80px] md:pt-[120px] h-screen min-h-[1000px] md:min-h-[500px] md:max-h-[750px] lg:max-h-[850px] bg-white  relative">
+    <div className="w-full max-w-[1513px] mb-10 xl:mb-20 mx-auto pt-[80px] md:pt-[120px] h-screen min-h-[900px] md:min-h-[500px] md:max-h-[750px] lg:max-h-[850px] bg-white  relative">
       {/* Header Navigation */}
 
 
