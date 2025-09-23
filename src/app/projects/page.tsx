@@ -98,7 +98,7 @@ const PortfolioPage = () => {
               // height="h-[400px]"
               delay={0}
             >
-              <Image src="/ui:ux.png" alt="UI/UX Design" width={1000} height={1000} className="h-full w-full object-cover" />
+              <Image src="/ui:ux.jpg" alt="UI/UX Design" width={1000} height={1000} className="h-full w-full object-cover" />
              
             </CascadedCard>
 
@@ -108,7 +108,7 @@ const PortfolioPage = () => {
               // height="h-[400px]"
               delay={0.8}
             >
-             <Image src="/brand.png" alt="UI/UX Design" width={1000} height={1000} className="h-full w-full object-cover" />
+             <Image src="/brand.jpg" alt="UI/UX Design" width={1000} height={1000} className="h-full w-full object-cover" />
             </CascadedCard>
 
             {/* Graphic Design Card */}
@@ -117,7 +117,7 @@ const PortfolioPage = () => {
               // height="h-[400px]"
               delay={1.6}
             >
-              <Image src="/social.png" alt="UI/UX Design" width={1000} height={1000} className="h-full w-full object-cover" />
+              <Image src="/graphics.jpg" alt="UI/UX Design" width={1000} height={1000} className="h-full w-full object-cover" />
             </CascadedCard>
           </div>
         </div>
