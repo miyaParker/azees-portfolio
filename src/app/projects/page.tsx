@@ -300,8 +300,8 @@ const PortfolioPage = () => {
       </section>
 
       {/* Brand Design Section */}
-      <section className="px-4 sm:px-8 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto relative z-10">
+      <section className="w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] relative overflow-hidden">
+        <div className="mx-auto relative z-10">
           <motion.div 
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -319,7 +319,7 @@ const PortfolioPage = () => {
 
           {/* Logo Grid */}
           <motion.div 
-            className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-8 max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto"
+            className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-8 mx-auto"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
