@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import BackToTopButton from '@/components/BackToTopButton';
+import ProjectHeroSection from '@/components/ProjectHeroSection';
 
 const GrabbyPage = () => {
   return (
@@ -11,64 +12,13 @@ const GrabbyPage = () => {
       <Navbar variant="dark" isAbsolute={false} />
 
       {/* Hero Section */}
-      <section className="relative pt-[120px] md:pt-[150px] min-h-screen flex flex-col overflow-hidden bg-gray-900">
-        {/* Hero Content */}
-        <div className="relative z-10 flex-1 flex items-center justify-center">
-          <div className="text-center px-4 sm:px-8 max-w-4xl mx-auto">
-            <motion.h1
-              className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:text-[54px] font-bold text-white leading-tight"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              Shop smarter, faster, and easier with Grabby. Seamless shopping at your fingertips anytime, anywhere.
-            </motion.h1>
-          </div>
-        </div>
-
-        {/* Project Details Footer */}
-        <div className="relative z-10 bg-[#C50536] py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              {/* Client */}
-              <motion.div
-                className="space-y-2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
-                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Client</h3>
-                  <p className="text-white/90 text-lg">CineTrips</p>
-              </motion.div>
-
-              {/* Industry */}
-              <motion.div
-                className="space-y-2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
-                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Client</h3>
-                  <p className="text-white/90 text-lg">Entertainment</p>
-              </motion.div>
-
-              {/* Platform */}
-              <motion.div
-                className="space-y-2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-              >
-                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Client</h3>
-                  <p className="text-white/90 text-lg">iOS</p>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProjectHeroSection
+        title="Shop smarter, faster, and easier with Grabby. Seamless shopping at your fingertips anytime, anywhere."
+        client="Grabby"
+        industry="E-commerce"
+        platform="iOS & Android"
+        backgroundColor="#C50536"
+      />
 
 
 

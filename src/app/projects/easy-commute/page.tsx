@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
 import BackToTopButton from '@/components/BackToTopButton';
+import ProjectHeroSection from '@/components/ProjectHeroSection';
 
 const EasyCommutePage = () => {
   return (
@@ -13,78 +14,13 @@ const EasyCommutePage = () => {
       <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
       {/* Hero Section */}
-      <div className="relative pt-[120px] md:pt-[150px] min-h-screen overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/hero.png"
-            alt="Easy Commute Hero Background"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-
-        {/* Main content */}
-        <div className="relative z-10 flex flex-col min-h-screen">
-          {/* Upper section with main text */}
-          <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-6xl"
-            >
-              <h1 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:text-[54px] font-bold text-white leading-tight">
-                Free access to live train times and railway station information
-              </h1>
-            </motion.div>
-          </div>
-
-          {/* Footer section with project details */}
-          <div className="py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#03045E' }}>
-            <div className="max-w-6xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                {/* Client */}
-                <motion.div
-                  className="text-center"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8 }}
-                  viewport={{ once: true }}
-                >
-                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Client</h3>
-                  <p className="text-white/90 text-lg font-light">Easy Commute</p>
-                </motion.div>
-
-                {/* Industry */}
-                <motion.div
-                  className="text-center"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  viewport={{ once: true }}
-                >
-                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Client</h3>
-                  <p className="text-white/90 text-lg font-light">Transportation</p>
-                </motion.div>
-
-                {/* Platform */}
-                <motion.div
-                  className="text-center"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
-                  viewport={{ once: true }}
-                >
-                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Client</h3>
-                  <p className="text-white/90 text-lg font-light">iOS & Android</p>
-                </motion.div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ProjectHeroSection
+        title="Free access to live train times and railway station information"
+        client="Easy Commute"
+        industry="Transportation"
+        platform="iOS & Android"
+        backgroundColor="#03045E"
+      />
 
       {/* Overview Section */}
       <section className="py-12 md:py-16 lg:py-20" style={{ backgroundColor: '#F6F6FF' }}>
