@@ -7,12 +7,12 @@ import FooterSection from '@/components/FooterSection';
 
 const CineTripsPage = () => {
   return (
-    <div className="overflow-x-hidden text-white" style={{ fontFamily: 'Poppins, sans-serif' }}>
+    <div className="overflow-x-hidden text-white " style={{ fontFamily: 'Poppins, sans-serif' }}>
       {/* Header Navigation */}
       <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
       {/* Hero Section */}
-      <section className="min-h-screen relative">
+      <section className="pt-[120px] md:pt-[150px] min-h-screen relative">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image

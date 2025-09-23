@@ -7,7 +7,7 @@ import FooterSection from "@/components/FooterSection";
 
 const BaldevProjectPage = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen pt-[120px] md:pt-[150px] bg-gray-900 text-white">
       {/* Header Navigation */}
       <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
@@ -36,7 +36,7 @@ const BaldevProjectPage = () => {
               transition={{ duration: 0.8 }}
               className="text-center max-w-5xl"
             >
-              <h1 className="text-[42px] md:text-[54px] font-bold text-white leading-tight">
+              <h1 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:text-[54px] font-bold text-white leading-tight">
                 Transforming Baldev Skills Resources’ Digital Presence
               </h1>
             </motion.div>
@@ -54,7 +54,7 @@ const BaldevProjectPage = () => {
                   transition={{ duration: 0.8 }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-white text-[22px] md:text-[24px] font-bold mb-2">Client</h3>
+                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Client</h3>
                   <p className="text-white/95 text-[18px]">Baldev Skills Resources Ltd.</p>
                 </motion.div>
 
@@ -66,7 +66,7 @@ const BaldevProjectPage = () => {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-white text-[22px] md:text-[24px] font-bold mb-2">Industry</h3>
+                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Industry</h3>
                   <p className="text-white/95 text-[18px]">Healthcare</p>
                 </motion.div>
 
@@ -78,7 +78,7 @@ const BaldevProjectPage = () => {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-white text-[22px] md:text-[24px] font-bold mb-2">Platform</h3>
+                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Platform</h3>
                   <p className="text-white/95 text-[18px]">Website</p>
                 </motion.div>
               </div>

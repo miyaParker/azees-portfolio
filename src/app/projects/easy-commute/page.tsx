@@ -7,7 +7,7 @@ import FooterSection from '@/components/FooterSection';
 
 const EasyCommutePage = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white overflow-x-hidden">
+    <div className="min-h-screen pt-[120px] md:pt-[150px] bg-gray-900 text-white overflow-x-hidden">
       {/* Header Navigation */}
       <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
@@ -34,7 +34,7 @@ const EasyCommutePage = () => {
               transition={{ duration: 0.8 }}
               className="text-center max-w-6xl"
             >
-              <h1 className="text-[36px] md:text-[44px] lg:text-[54px] font-bold text-white leading-tight">
+              <h1 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] xl:text-[54px] font-bold text-white leading-tight">
                 Free access to live train times and railway station information
               </h1>
             </motion.div>
@@ -52,8 +52,8 @@ const EasyCommutePage = () => {
                   transition={{ duration: 0.8 }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-white text-[28px] font-bold mb-2">Client</h3>
-                  <p className="text-white/90 text-[23px] font-light">Easy Commute</p>
+                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Client</h3>
+                  <p className="text-white/90 text-lg font-light">Easy Commute</p>
                 </motion.div>
 
                 {/* Industry */}
@@ -64,8 +64,8 @@ const EasyCommutePage = () => {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-white text-[28px] font-bold mb-2">Industry</h3>
-                  <p className="text-white/90 text-[23px] font-light">Transportation</p>
+                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Client</h3>
+                  <p className="text-white/90 text-lg font-light">Transportation</p>
                 </motion.div>
 
                 {/* Platform */}
@@ -76,8 +76,8 @@ const EasyCommutePage = () => {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-white text-[28px] font-bold mb-2">Platform</h3>
-                  <p className="text-white/90 text-[23px] font-light">iOS & Android</p>
+                  <h3 className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-bold mb-2">Client</h3>
+                  <p className="text-white/90 text-lg font-light">iOS & Android</p>
                 </motion.div>
               </div>
             </div>
