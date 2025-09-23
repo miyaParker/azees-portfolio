@@ -5,8 +5,57 @@ import Image from 'next/image';
 import CascadedCard from '@/components/CascadedCard';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
+import { useMemo, useState } from 'react';
+import FullWidthSlider from '@/components/FullWidthSlider';
 
 const PortfolioPage = () => {
+  const graphicImages = useMemo(() => (
+    [
+      { src: '/graphic-design/g-1.png', alt: 'Graphic 1' },
+      { src: '/graphic-design/g-2.png', alt: 'Graphic 2' },
+      { src: '/graphic-design/g-3.png', alt: 'Graphic 3' },
+      { src: '/graphic-design/g-4.png', alt: 'Graphic 4' },
+      { src: '/graphic-design/g-5.png', alt: 'Graphic 5' },
+      { src: '/graphic-design/g-6.png', alt: 'Graphic 6' },
+      { src: '/graphic-design/g-7.png', alt: 'Graphic 7' },
+      { src: '/graphic-design/g-8.png', alt: 'Graphic 8' },
+      { src: '/graphic-design/g-9.png', alt: 'Graphic 9' },
+      { src: '/graphic-design/g-10.png', alt: 'Graphic 10' },
+      { src: '/graphic-design/g-11.png', alt: 'Graphic 11' },
+      { src: '/graphic-design/g-12.png', alt: 'Graphic 12' },
+    ]
+  ), []);
+
+  const [isSliderOpen, setIsSliderOpen] = useState(false);
+  const [sliderIndex, setSliderIndex] = useState(0);
+
+  const openSliderAt = (index: number) => {
+    setSliderIndex(index);
+    setIsSliderOpen(true);
+  };
+
+  const brandImages = useMemo(() => (
+    [
+      { src: '/brands/inside-africa.png', alt: 'Inside Africa' },
+      { src: '/brands/eholaz.png', alt: 'Eholaz' },
+      { src: '/brands/peeg.png', alt: 'Peeg' },
+      { src: '/brands/obz.png', alt: 'OBZ' },
+      { src: '/brands/mej.png', alt: 'MEJ' },
+      { src: '/brands/blueberry.png', alt: 'Blueberry' },
+      { src: '/brands/creme.png', alt: 'Creme' },
+      { src: '/brands/lasgidi.png', alt: 'Lasgidi' },
+      { src: '/brands/grabby.png', alt: 'Grabby' },
+    ]
+  ), []);
+
+  const [isBrandSliderOpen, setIsBrandSliderOpen] = useState(false);
+  const [brandSliderIndex, setBrandSliderIndex] = useState(0);
+
+  const openBrandSliderAt = (index: number) => {
+    setBrandSliderIndex(index);
+    setIsBrandSliderOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Header Navigation */}
@@ -46,7 +95,7 @@ const PortfolioPage = () => {
             <CascadedCard
               title="UI/UX Design"
               // height="h-[400px]"
-              delay={0.2}
+              delay={0}
             >
               <Image src="/ui:ux.png" alt="UI/UX Design" width={1000} height={1000} className="h-full w-full object-cover" />
              
@@ -56,7 +105,7 @@ const PortfolioPage = () => {
             <CascadedCard
               title="Brand Design"
               // height="h-[400px]"
-              delay={0.4}
+              delay={0.8}
             >
              <Image src="/brand.png" alt="UI/UX Design" width={1000} height={1000} className="h-full w-full object-cover" />
             </CascadedCard>
@@ -65,7 +114,7 @@ const PortfolioPage = () => {
             <CascadedCard
               title="Graphic Design"
               // height="h-[400px]"
-              delay={0.6}
+              delay={1.6}
             >
               <Image src="/social.png" alt="UI/UX Design" width={1000} height={1000} className="h-full w-full object-cover" />
             </CascadedCard>
@@ -269,27 +318,17 @@ const PortfolioPage = () => {
 
           {/* Logo Grid */}
           <motion.div 
-            className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-8 max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 lg:gap-8 max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            {/* <div className="bg-white rounded-2xl p-6 h-24 xl:w-[395px] xl:h-[395px] flex items-center justify-center"> */}
-              <Image src="/brands/inside-africa.png" alt="Inside Africa" width={395} height={395} />
-            {/* </div> */}
-              <Image src="/brands/eholaz.png" alt="Eholaz" width={395} height={395} />
-            
-              <Image src="/brands/peeg.png" alt="Peeg" width={395} height={395} />
-            
-              <Image src="/brands/obz.png" alt="OBZ" width={395} height={395} />
-            
-              <Image src="/brands/mej.png" alt="MEJ" width={395} height={395} />
-            
-              <Image src="/brands/blueberry.png" alt="Blueberry" width={395} height={395} />
-                          <Image src="/brands/creme.png" alt="Creme" width={395} height={395} />
-              <Image src="/brands/lasgidi.png" alt="Lasgidi" width={395} height={395} />
-              <Image src="/brands/grabby.png" alt="Grabby" width={395} height={395} />
+            {brandImages.map((img, idx) => (
+              <button key={img.src} className="relative" onClick={() => openBrandSliderAt(idx)} aria-label={`Open ${img.alt ?? 'brand'} in slider`}>
+                <Image src={img.src} alt={img.alt ?? 'Brand'} width={395} height={395} />
+              </button>
+            ))}
           </motion.div>
         </div>
       </section>
@@ -314,30 +353,37 @@ const PortfolioPage = () => {
 
           {/* Graphic Showcase Grid */}
           <motion.div 
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 lg:gap-8"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Image src="/graphic-design/g-1.png" alt="Graphic 1" width={395} height={395}/>
-            <Image src="/graphic-design/g-2.png" alt="Graphic 2" width={395} height={395}/>
-            <Image src="/graphic-design/g-3.png" alt="Graphic 3" width={395} height={395}  />
-            <Image src="/graphic-design/g-4.png" alt="Graphic 4" width={395} height={395}  />
-            <Image src="/graphic-design/g-5.png" alt="Graphic 5" width={395} height={395}  />
-            <Image src="/graphic-design/g-6.png" alt="Graphic 6" width={395} height={395}  />
-            <Image src="/graphic-design/g-7.png" alt="Graphic 7" width={395} height={395}  />
-            <Image src="/graphic-design/g-8.png" alt="Graphic 8" width={395} height={395}  />
-            <Image src="/graphic-design/g-9.png" alt="Graphic 9" width={395} height={395}  />
-            <Image src="/graphic-design/g-10.png" alt="Graphic 10" width={395} height={395}  />
-            <Image src="/graphic-design/g-11.png" alt="Graphic 11" width={395} height={395}  />
-            <Image src="/graphic-design/g-12.png" alt="Graphic 12" width={395} height={395}  />
+            {graphicImages.map((img, idx) => (
+              <button key={img.src} className="relative" onClick={() => openSliderAt(idx)} aria-label={`Open ${img.alt ?? 'graphic'} in slider`}>
+                <Image src={img.src} alt={img.alt ?? 'Graphic'} width={395} height={395} />
+              </button>
+            ))}
           </motion.div>
         </div>
       </section>
 
       {/* Footer Section */}
       <FooterSection />
+      <FullWidthSlider
+        images={graphicImages}
+        isOpen={isSliderOpen}
+        initialIndex={sliderIndex}
+        onClose={() => setIsSliderOpen(false)}
+        onChangeIndex={(i) => setSliderIndex(i)}
+      />
+      <FullWidthSlider
+        images={brandImages}
+        isOpen={isBrandSliderOpen}
+        initialIndex={brandSliderIndex}
+        onClose={() => setIsBrandSliderOpen(false)}
+        onChangeIndex={(i) => setBrandSliderIndex(i)}
+      />
     </div>
   );
 };
