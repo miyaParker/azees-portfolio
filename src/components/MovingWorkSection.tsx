@@ -56,7 +56,7 @@ const MovingWorkSection = () => {
             initial={{ x: '-100%' }}
             animate={{ x: '100%' }}
             transition={{
-              duration: 150,
+              duration: 250,
               repeat: Infinity,
               ease: 'linear'
             }}

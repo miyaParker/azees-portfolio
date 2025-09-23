@@ -12,7 +12,7 @@ const CineTripsPage = () => {
       <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
       {/* Hero Section */}
-      <div className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] lg:min-h-screen overflow-hidden">
+      <section className="pt-[80px] lg:pt-[180px] mb-[120px] lg:mb-[150px] px-4 sm:px-8 relative h-max">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -85,7 +85,7 @@ const CineTripsPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Intro Section */}
       <section className="w-full max-w-[1513px] mx-auto py-20 px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] bg-white">
@@ -179,9 +179,9 @@ const CineTripsPage = () => {
                 viewport={{ once: true }}
               >
                 {/* Left Side - My Role and Tools */}
-                <div className="mx-auto md:mx-0 flex flex-col sm:flex-row xl:flex-col space-y-8 sm:space-y-0 sm:space-x-8 xl:space-x-0 xl:space-y-8 w-1/2">
+                <div className="mx-auto md:mx-0 flex flex-col space-y-4 md:space-y-8">
                   {/* My Role */}
-                  <div className="space-y-4 sm:w-1/2 xl:w-full">
+                  <div className="space-y-4 w-full">
                     <div className="flex items-center space-x-3">
                       <div className="flex items-center justify-center">
                         <Image
@@ -192,9 +192,9 @@ const CineTripsPage = () => {
                           className="w-[24px] h-[24px] sm:w-[28px] sm:h-[28px] md:w-[32px] md:h-[32px] lg:w-[36px] lg:h-[36px] xl:w-[40px] xl:h-[40px]"
                         />
                       </div>
-                      <h3 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[28px] font-medium text-gray-900">My Role</h3>
+                      <h3 className="text-center md:text-left text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[28px] font-medium text-gray-900">My Role</h3>
                     </div>
-                    <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]" style={{ color: '#212121' }}>Lead UX/UI Designer</p>
+                    <p className="text-center md:text-left text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]" style={{ color: '#212121' }}>Lead UX/UI Designer</p>
                   </div>
 
                   {/* Tools Used */}
@@ -215,7 +215,7 @@ const CineTripsPage = () => {
                         alt="Figma"
                         width={41}
                         height={63}
-                        className="w-[20px] h-[30px] sm:w-[24px] sm:h-[36px] md:w-[28px] md:h-[42px] lg:w-[32px] lg:h-[48px] xl:w-[36px] xl:h-[54px]"
+                        className="w-[15px] h-[24px] sm:w-[19px] sm:h-[28px] md:w-[28px] md:h-[42px] lg:w-[27px] lg:h-[36px] xl:w-[31px] xl:h-[40px]"
                       />
                       <Image
                         src="/projects/cinetrips/photoshop.png"
@@ -310,10 +310,10 @@ const CineTripsPage = () => {
           >
             <div className="flex items-center justify-center space-x-4 mb-6">
               <div className="w-8 h-8 flex items-center justify-center">
-               
+
               </div>
               <h2 className="text-[36px] md:text-[44px] font-bold text-purple-900">
-              <Image
+                <Image
                   src="/projects/cinetrips/recovery-convert.png"
                   alt="Design Thinking Process Icon"
                   width={32}
@@ -752,39 +752,39 @@ const CineTripsPage = () => {
 
             </div>
             <div className="absolute bottom-0 left-0 right-0 pointer-events-none select-none  -bottom-40">
-          <Image
-            src="/projects/cinetrips/vector.png"
-            alt="Decorative vector"
-            width={1200}
-            height={200}
-            className="w-full h-auto"
-            priority
-          />
-        </div>
+              <Image
+                src="/projects/cinetrips/vector.png"
+                alt="Decorative vector"
+                width={1200}
+                height={200}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
           </motion.div>
-         
+
         </div>
-       
+
       </section>
 
       {/* Empathize Phase Section */}
       <section className="w-full max-w-[1513px] mx-auto py-20 px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px] bg-white">
         <div className="max-w-[1513px] mx-auto">
-         
+
           <div className="bg-[#FFFBF8] p-8">
-             {/* Section Header */}
-          <motion.div
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-[36px] md:text-[44px] font-bold">
-              <span className="text-black">Empathize </span>
-              <span className="text-[#D70A84]">Phase</span>
-            </h2>
-          </motion.div>
+            {/* Section Header */}
+            <motion.div
+              className="text-center mb-12"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-[36px] md:text-[44px] font-bold">
+                <span className="text-black">Empathize </span>
+                <span className="text-[#D70A84]">Phase</span>
+              </h2>
+            </motion.div>
             {/* Qualitative Research Section */}
             <motion.div
               className="mb-12"
@@ -1411,7 +1411,7 @@ const CineTripsPage = () => {
               viewport={{ once: true }}
             >
               {/* Background Card */}
-                <div className="hidden md:block absolute inset-0 rounded-2xl transform -rotate-3 w-full max-w-[595px]" style={{ backgroundColor: '#083B6D' }}></div>
+              <div className="hidden md:block absolute inset-0 rounded-2xl transform -rotate-3 w-full max-w-[595px]" style={{ backgroundColor: '#083B6D' }}></div>
               {/* Main Card */}
               <div className="relative rounded-2xl p-8 transform md:rotate-2 w-full max-w-[595px]" style={{ backgroundColor: '#BCDBFA' }}>
                 <h3 className="text-[24px] font-medium text-gray-900 mb-6">Feels</h3>
@@ -2020,28 +2020,28 @@ const CineTripsPage = () => {
             className="w-full"
           >
             {/* Visual Design Images */}
-              {/* <div className="mx-auto w-[600px]"> */}
-                <Image
-                  src="/projects/cinetrips/vd-1.png"
-                  alt="Visual Design - Design System"
-                  width={600}
-                  height={400}
-                  className="w-full mx-auto"
-                />
+            {/* <div className="mx-auto w-[600px]"> */}
+            <Image
+              src="/projects/cinetrips/vd-1.png"
+              alt="Visual Design - Design System"
+              width={600}
+              height={400}
+              className="w-full mx-auto"
+            />
 
-              {/* </div> */}
-              <Image
-                src="/projects/cinetrips/vd-2.png"
-                alt="Visual Design - UI Components"
-                width={600}
-                height={400}
-                className="w-full mx-auto"
-              />
+            {/* </div> */}
+            <Image
+              src="/projects/cinetrips/vd-2.png"
+              alt="Visual Design - UI Components"
+              width={600}
+              height={400}
+              className="w-full mx-auto"
+            />
           </motion.div>
         </div>
       </section>
 
-     
+
       {/* High Fidelity Prototype Section */}
       <section className="w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[80px]">
         <div className="max-w-[1513px] mx-auto bg-[#F6EBFF] py-20 px-[20px] sm:px-[40px] lg:px-[80px]">
@@ -2076,7 +2076,7 @@ const CineTripsPage = () => {
             </div>
 
           </motion.div>
-                    </div>
+        </div>
       </section>
 
       {/* High Fidelity Prototype Link Section */}
@@ -2100,8 +2100,8 @@ const CineTripsPage = () => {
           </div>
         </div>
       </section>
-  {/* Lessons & Next Steps Section */}
-  <section className="w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[80px]">
+      {/* Lessons & Next Steps Section */}
+      <section className="w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[80px]">
         <div className="max-w-[1513px] mx-auto bg-[#FFFBF8] py-[80px] px-[20px] sm:px-[40px] lg:px-[80px]">
           {/* Title */}
           <div className="text-center mb-[40px]">
@@ -2113,17 +2113,17 @@ const CineTripsPage = () => {
 
           {/* Content */}
           <div className="grid grid-cols-1 gap-[80px]">
-            
+
             {/* Lessons Learned */}
             <div>
               <div className="flex items-center gap-[12px] mb-[24px]">
                 <span className="inline-flex items-center justify-center">
                   <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M28.1195 54.5784C42.8856 54.5784 54.856 42.6077 54.856 27.8421C54.856 13.0764 42.8856 1.10742 28.1195 1.10742C13.3533 1.10742 1.38293 13.0764 1.38293 27.8421C1.38293 42.6077 13.3533 54.5784 28.1195 54.5784Z" fill="#C50536" fillOpacity="0.05" stroke="#C50536" strokeWidth="2"/>
-                    <path d="M42.052 34.473V17.6416C42.052 15.9415 40.6868 14.7525 39.0283 14.8375H38.945C36.0191 15.0925 31.5749 16.6229 29.0945 18.153L28.8581 18.3223C28.4535 18.5773 27.7854 18.5773 27.3807 18.3223L27.033 18.0666C24.5526 16.5366 20.1221 15.0925 17.1963 14.8375C15.5383 14.6675 14.1868 15.9415 14.1868 17.6416V34.473C14.1868 35.7481 15.2736 37.0225 16.6111 37.1925L17.0151 37.2788C20.0385 37.7038 24.7056 39.2339 27.3807 40.6789H27.4368C27.8126 40.9339 28.4119 40.9339 28.774 40.6789C31.4491 39.2339 36.1305 37.7038 39.1677 37.2788L39.6276 37.1925C40.9656 37.0225 42.052 35.7481 42.052 34.473Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M28.1194 18.7461V39.6567" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path opacity="0.2" d="M22.1979 22.9121H19.0632" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M23.2434 27.1621H19.0632" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M28.1195 54.5784C42.8856 54.5784 54.856 42.6077 54.856 27.8421C54.856 13.0764 42.8856 1.10742 28.1195 1.10742C13.3533 1.10742 1.38293 13.0764 1.38293 27.8421C1.38293 42.6077 13.3533 54.5784 28.1195 54.5784Z" fill="#C50536" fillOpacity="0.05" stroke="#C50536" strokeWidth="2" />
+                    <path d="M42.052 34.473V17.6416C42.052 15.9415 40.6868 14.7525 39.0283 14.8375H38.945C36.0191 15.0925 31.5749 16.6229 29.0945 18.153L28.8581 18.3223C28.4535 18.5773 27.7854 18.5773 27.3807 18.3223L27.033 18.0666C24.5526 16.5366 20.1221 15.0925 17.1963 14.8375C15.5383 14.6675 14.1868 15.9415 14.1868 17.6416V34.473C14.1868 35.7481 15.2736 37.0225 16.6111 37.1925L17.0151 37.2788C20.0385 37.7038 24.7056 39.2339 27.3807 40.6789H27.4368C27.8126 40.9339 28.4119 40.9339 28.774 40.6789C31.4491 39.2339 36.1305 37.7038 39.1677 37.2788L39.6276 37.1925C40.9656 37.0225 42.052 35.7481 42.052 34.473Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M28.1194 18.7461V39.6567" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path opacity="0.2" d="M22.1979 22.9121H19.0632" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M23.2434 27.1621H19.0632" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
                 <h3 className="text-[28px] leading-[34px] font-bold text-black">Lessons Learned</h3>
@@ -2149,11 +2149,11 @@ const CineTripsPage = () => {
               <div className="flex items-center gap-[12px] mb-[24px]">
                 <span className="inline-flex items-center justify-center">
                   <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M28.1195 54.8964C42.8856 54.8964 54.856 42.9258 54.856 28.1601C54.856 13.3945 42.8856 1.42383 28.1195 1.42383C13.3533 1.42383 1.38293 13.3945 1.38293 28.1601C1.38293 42.9258 13.3533 54.8964 28.1195 54.8964Z" fill="#C50536" fillOpacity="0.05" stroke="#C50536" strokeWidth="2"/>
-                    <path d="M18.0879 39.2949H38.151" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M20.9859 24.1641H19.2025C18.5894 24.1641 18.0879 24.6731 18.0879 25.2681V34.8742C18.0879 35.4692 18.5894 35.9782 19.2025 35.9782H20.9859C21.5988 35.9782 22.1 35.4692 22.1 34.8742V25.2681C22.1 24.6731 21.5988 24.1641 20.9859 24.1641Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M29.0112 20.5938H27.2277C26.6148 20.5938 26.1133 21.1044 26.1133 21.6995V34.875C26.1133 35.4701 26.6148 35.9791 27.2277 35.9791H29.0112C29.6241 35.9791 30.1256 35.4701 30.1256 34.875V21.6995C30.1256 21.1044 29.6241 20.5938 29.0112 20.5938Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M37.0367 17.0234H35.2532C34.6403 17.0234 34.1379 17.5325 34.1379 18.1275V34.8742C34.1379 35.4692 34.6403 35.9783 35.2532 35.9783H37.0367C37.6496 35.9783 38.1511 35.4692 38.1511 34.8742V18.1275C38.1511 17.5325 37.6496 17.0234 37.0367 17.0234Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M28.1195 54.8964C42.8856 54.8964 54.856 42.9258 54.856 28.1601C54.856 13.3945 42.8856 1.42383 28.1195 1.42383C13.3533 1.42383 1.38293 13.3945 1.38293 28.1601C1.38293 42.9258 13.3533 54.8964 28.1195 54.8964Z" fill="#C50536" fillOpacity="0.05" stroke="#C50536" strokeWidth="2" />
+                    <path d="M18.0879 39.2949H38.151" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M20.9859 24.1641H19.2025C18.5894 24.1641 18.0879 24.6731 18.0879 25.2681V34.8742C18.0879 35.4692 18.5894 35.9782 19.2025 35.9782H20.9859C21.5988 35.9782 22.1 35.4692 22.1 34.8742V25.2681C22.1 24.6731 21.5988 24.1641 20.9859 24.1641Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M29.0112 20.5938H27.2277C26.6148 20.5938 26.1133 21.1044 26.1133 21.6995V34.875C26.1133 35.4701 26.6148 35.9791 27.2277 35.9791H29.0112C29.6241 35.9791 30.1256 35.4701 30.1256 34.875V21.6995C30.1256 21.1044 29.6241 20.5938 29.0112 20.5938Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M37.0367 17.0234H35.2532C34.6403 17.0234 34.1379 17.5325 34.1379 18.1275V34.8742C34.1379 35.4692 34.6403 35.9783 35.2532 35.9783H37.0367C37.6496 35.9783 38.1511 35.4692 38.1511 34.8742V18.1275C38.1511 17.5325 37.6496 17.0234 37.0367 17.0234Z" stroke="#C50536" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
                 <h3 className="text-[28px] leading-[34px] font-bold text-[#C50536]">Next Steps</h3>

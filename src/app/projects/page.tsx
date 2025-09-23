@@ -13,7 +13,7 @@ const PortfolioPage = () => {
       <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
       {/* Hero Section - My Portfolio */}
-      <section className="pt-[120px] lg:pt-[180px] mb-[120px] lg:mb-[150px] px-4 sm:px-8 relative h-max ">
+      <section className="pt-[120px] lg:pt-[180px] mb-[120px] lg:mb-[150px] px-4 sm:px-8 relative h-max">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl"></div>
