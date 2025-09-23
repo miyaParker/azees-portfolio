@@ -8,6 +8,7 @@ import ClientsSection from '@/components/ClientsSection';
 import MovingWorkSection from '@/components/MovingWorkSection';
 import FooterSection from '@/components/FooterSection';
 import Navbar from '@/components/Navbar';
+import BackToTopButton from '@/components/BackToTopButton';
 export default function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function Home() {
       <ClientsSection />
       <MovingWorkSection />
       <FooterSection />
+      <BackToTopButton />
     </>
   );
 }

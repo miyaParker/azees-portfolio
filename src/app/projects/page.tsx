@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
 import { useMemo, useState } from 'react';
 import FullWidthSlider from '@/components/FullWidthSlider';
+import BackToTopButton from '@/components/BackToTopButton';
 
 const PortfolioPage = () => {
   const graphicImages = useMemo(() => (
@@ -72,7 +73,7 @@ const PortfolioPage = () => {
 
         <div className="max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto relative z-10 text-center">
           <motion.h1 
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -81,7 +82,7 @@ const PortfolioPage = () => {
           </motion.h1>
           
           <motion.p 
-            className="text-xl text-gray-300 max-w-4xl mx-auto mb-16"
+            className="text-lg sm:text-xl text-gray-300 max-w-4xl mx-auto mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -384,6 +385,7 @@ const PortfolioPage = () => {
         onClose={() => setIsBrandSliderOpen(false)}
         onChangeIndex={(i) => setBrandSliderIndex(i)}
       />
+      <BackToTopButton />
     </div>
   );
 };

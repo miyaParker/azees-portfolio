@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
+import BackToTopButton from '@/components/BackToTopButton';
 
 const EasyCommutePage = () => {
   return (
@@ -1091,6 +1092,7 @@ const EasyCommutePage = () => {
 
       {/* Footer */}
       <FooterSection />
+      <BackToTopButton />
     </div>
   );
 };

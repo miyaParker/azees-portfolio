@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
+import BackToTopButton from '@/components/BackToTopButton';
 
 const GrabbyPage = () => {
   return (
@@ -807,7 +808,7 @@ const GrabbyPage = () => {
                 <h3 className="text-[24px] md:text-[26px] font-bold text-gray-800">Qualitative Research</h3>
               </div>
               <p className="text-gray-700 text-[18px] md:text-[20px] leading-relaxed ml-8 text-justify">
-                In this study, 10 respondents between the ages of 18–55 were interviewed using Google Meet, Zoom, Webex and other social media conference platforms to gather their feedback and thoughts on competitors. The interviews yielded several key themes related to the app’s user experience, functionality, and design.
+                In this study, 10 respondents between the ages of 18–55 were interviewed using Google Meet, Zoom, Webex and other social media conference platforms to gather their feedback and thoughts on competitors. The interviews yielded several key themes related to the app's user experience, functionality, and design.
               </p>
             </motion.div>
 
@@ -899,7 +900,7 @@ const GrabbyPage = () => {
               <span className="text-[#C50536]">Audit</span>
             </h2>
             <p className="text-gray-800 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[28px] mx-auto leading-relaxed text-justify">
-              After conducting our research, we identified several direct competitors for Grabby in the market. To gain a better understanding of the competition, we selected three established competitors and conducted a review of their strengths and weaknesses. By analyzing this data, we aim to identify opportunities for improving Grabby’s functionality and performance in the market.
+              After conducting our research, we identified several direct competitors for Grabby in the market. To gain a better understanding of the competition, we selected three established competitors and conducted a review of their strengths and weaknesses. By analyzing this data, we aim to identify opportunities for improving Grabby's functionality and performance in the market.
             </p>
           </motion.div>
 
@@ -1087,7 +1088,7 @@ const GrabbyPage = () => {
 
                 {/* Quote */}
                 <div className="mt-4 inline-block bg-[#F2F2F2] text-gray-700 px-6 py-3 rounded-[60px] text-center italic">
-                  “Victory is for the prepared.”
+                  "Victory is for the prepared."
                 </div>
 
                 {/* Facts list */}
@@ -1233,7 +1234,7 @@ const GrabbyPage = () => {
 
               {/* Quote */}
               <div className="mt-4 inline-block bg-[#F2F2F2] text-gray-700 px-6 py-3 rounded-[60px] text-center italic">
-                “Nothing is ever as it seems.”
+                "Nothing is ever as it seems."
               </div>
 
               {/* Facts list */}
@@ -1304,7 +1305,7 @@ const GrabbyPage = () => {
                   <h4 className="text-[22px] font-bold text-[#FF7300]">Frustrations</h4>
                 </div>
                 <ul className="space-y-2 text-gray-800">
-                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Item ordered doesn’t match description.</span></li>
+                  <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Item ordered doesn't match description.</span></li>
                   <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>Delayed delivery.</span></li>
                   <li className="flex items-start gap-3"><span className="mt-2 w-2 h-2 rounded-full bg-[#FF7300] shrink-0"></span><span>App is not user friendly and too slow.</span></li>
                 </ul>
@@ -1414,7 +1415,7 @@ const GrabbyPage = () => {
               <h3 className="text-2xl font-bold text-gray-800 mb-6">Feels</h3>
               <ul className="space-y-3 text-gray-800">
                 <li className="flex items-start"><span className="text-black text-lg mr-3">•</span><span>Lack of reviews can be offsetting.</span></li>
-                <li className="flex items-start"><span className="text-black text-lg mr-3">•</span><span>Feels bad because they can’t get to bid for items.</span></li>
+                <li className="flex items-start"><span className="text-black text-lg mr-3">•</span><span>Feels bad because they can't get to bid for items.</span></li>
                 <li className="flex items-start"><span className="text-black text-lg mr-3">•</span><span>Dispute between customers and vendors are often not resolved.</span></li>
                 <li className="flex items-start"><span className="text-black text-lg mr-3">•</span><span>The comfort that comes with shopping online in comfort of my home is why i like online shopping.</span></li>
               </ul>
@@ -2238,6 +2239,8 @@ const GrabbyPage = () => {
           </div>
         </div>
       </footer>
+
+      <BackToTopButton />
 
     </div>
   );

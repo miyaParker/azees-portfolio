@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
+import BackToTopButton from "@/components/BackToTopButton";
 
 const BaldevProjectPage = () => {
   return (
@@ -453,6 +454,7 @@ const BaldevProjectPage = () => {
       </section>
 
       <FooterSection />
+      <BackToTopButton />
     </div>
   );
 };

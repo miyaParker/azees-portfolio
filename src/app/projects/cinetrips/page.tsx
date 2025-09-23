@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import FooterSection from '@/components/FooterSection';
+import BackToTopButton from '@/components/BackToTopButton';
 
 const CineTripsPage = () => {
   return (
@@ -2012,7 +2013,7 @@ const CineTripsPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="w-full"
           >
@@ -2186,6 +2187,7 @@ const CineTripsPage = () => {
 
       {/* Footer */}
       <FooterSection />
+      <BackToTopButton />
     </div>
   );
 };

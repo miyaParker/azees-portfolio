@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
+import BackToTopButton from "@/components/BackToTopButton";
 
 const RositaCuisinePage = () => {
   return (
@@ -96,7 +97,7 @@ const RositaCuisinePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[44px] font-semibold text-white text-center mb-[40px]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white text-center mb-[40px]">
               Overview
             </h2>
             <p className="text-[20px] md:text-[22px] leading-relaxed text-white/90 text-left">
@@ -119,7 +120,7 @@ const RositaCuisinePage = () => {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <h2 className="text-[44px] font-semibold text-white mb-[60px] text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-[60px] text-center">
               Introducing Rosita <span style={{ color: "#0EDAC6" }}>Mobile App</span>
             </h2>
             
@@ -133,7 +134,7 @@ const RositaCuisinePage = () => {
                 className="space-y-10"
               >
                 <div>
-                  <h3 className="text-[28px] md:text-[30px] font-extrabold text-white mb-4">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-4">
                     What is Rosita African Cuisine?
                   </h3>
                   <p className="text-[20px] leading-relaxed" style={{ color: "#C9D1D9" }}>
@@ -145,12 +146,12 @@ const RositaCuisinePage = () => {
                 </div>
                 
                 <div>
-                  <h4 className="text-[24px] font-bold text-white mb-2">Timeline</h4>
+                  <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">Timeline</h4>
                   <p className="text-[20px]" style={{ color: "#C9D1D9" }}>8 Weeks</p>
                 </div>
                 
                 <div>
-                  <h4 className="text-[24px] font-bold text-white mb-2">Client</h4>
+                  <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">Client</h4>
                   <p className="text-[20px]" style={{ color: "#C9D1D9" }}>Rosita Cuisine</p>
                 </div>
               </motion.div>
@@ -164,7 +165,7 @@ const RositaCuisinePage = () => {
                 className="space-y-10"
               >
                 <div>
-                  <h3 className="text-[28px] md:text-[30px] font-extrabold text-white mb-4">My Role</h3>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-4">My Role</h3>
                   <p className="text-[20px] leading-relaxed" style={{ color: "#C9D1D9" }}>
                     Lead the prototyping, conducted design sprints, led usability testing, designed
                     low‑fi and mid‑fi applications, led high‑fidelity design and visual direction.
@@ -172,14 +173,14 @@ const RositaCuisinePage = () => {
                 </div>
                 
                 <div>
-                  <h4 className="text-[24px] font-bold text-white mb-2">Tools</h4>
+                  <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">Tools</h4>
                   <p className="text-[20px]" style={{ color: "#C9D1D9" }}>
                     Figma, Pen and Paper Sketch, Google Docs, Miro
                   </p>
                 </div>
                 
                 <div>
-                  <h4 className="text-[24px] font-bold text-white mb-2">Skills</h4>
+                  <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">Skills</h4>
                   <p className="text-[20px]" style={{ color: "#C9D1D9" }}>
                     Experimentation, A/B testing, Qualitative research, User interviews, Usability testing,
                     UX design, UI design
@@ -201,7 +202,7 @@ const RositaCuisinePage = () => {
             viewport={{ once: true }}
             className="mb-10"
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-6">
               The <span style={{ color: "#0EDAC6" }}>Challenge</span>
             </h2>
             <p className="text-[20px] leading-relaxed text-white/90 text-center max-w-4xl mx-auto">
@@ -256,7 +257,7 @@ const RositaCuisinePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-8">
               Defining the <span style={{ color: "#0EDAC6" }}>Problem</span>
             </h2>
             <p className="text-[20px] leading-relaxed text-white/90 text-left">
@@ -276,7 +277,7 @@ const RositaCuisinePage = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h3 className="text-[28px] md:text-[32px] font-extrabold text-white mb-6">Opportunity</h3>
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-6">Opportunity</h3>
             <p className="text-[18px] md:text-[20px] leading-relaxed text-white/80 max-w-5xl mx-auto">
               With a population of over 200 million people, Rosita African Cuisine aims to increase customer satisfaction by providing a convenient and efficient ordering experience while expanding the delivery reach and reducing operational costs for the restaurant, ultimately leading to increased revenue.
             </p>
@@ -295,7 +296,7 @@ const RositaCuisinePage = () => {
           >
             <div className="rounded-2xl" style={{ backgroundColor: "#172B4D" }}>
               <div className="px-8 md:px-12 py-12 md:py-14 text-center">
-                <h4 className="text-[26px] md:text-[30px] font-extrabold text-white mb-6">
+                <h4 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white mb-6">
                   Hypothesis <span style={{ color: "#0EDAC6" }}>Statement</span>
                 </h4>
                 <p className="text-white/90 text-[18px] md:text-[20px] leading-relaxed max-w-4xl mx-auto">
@@ -316,7 +317,7 @@ const RositaCuisinePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-6">
               Conducting <span style={{ color: "#0EDAC6" }}>Desk Research</span>
             </h2>
             <p className="text-[20px] leading-relaxed text-white/90 text-center max-w-5xl mx-auto mb-10">
@@ -354,7 +355,7 @@ const RositaCuisinePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-8">
               User <span style={{ color: "#0EDAC6" }}>Research</span>
             </h2>
 
@@ -393,7 +394,7 @@ const RositaCuisinePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-8">
               Insights from the <span style={{ color: "#0EDAC6" }}>Research</span>
             </h2>
             <div className="">
@@ -425,7 +426,7 @@ const RositaCuisinePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-8">
               Feature <span style={{ color: "#0EDAC6" }}>Prioritisation</span>
             </h2>
             <div className="">
@@ -458,7 +459,7 @@ const RositaCuisinePage = () => {
             viewport={{ once: true }}
             className="text-white/90"
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-8">
               Competitive <span style={{ color: "#0EDAC6" }}>Audit</span>
             </h2>
 
@@ -501,7 +502,7 @@ const RositaCuisinePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-8">
               Constraints
             </h2>
             <p className="text-[20px] leading-relaxed text-white/90 mx-auto mb-10">
@@ -539,7 +540,7 @@ const RositaCuisinePage = () => {
             viewport={{ once: true }}
             className="text-white/90"
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-6">Sitemap</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-6">Sitemap</h2>
             <p className="text-[20px] leading-relaxed text-left mb-2">
               I decided to design a hierarchical diagram that visually represents the structure and
               organisation of the mobile app. The purpose of this sitemap was to allow you to visualise
@@ -562,7 +563,7 @@ const RositaCuisinePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-8">
               Designing the <span style={{ color: "#0EDAC6" }}>Solution</span>
             </h2>
             <div>
@@ -595,7 +596,7 @@ const RositaCuisinePage = () => {
             viewport={{ once: true }}
             className=""
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-white text-center mb-6">Final Solution</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white text-center mb-6">Final Solution</h2>
             <p className="text-[20px] leading-relaxed text-white/90">
               The design decisions were centered around seamless user experience, inclusion, and
               accessibility.
@@ -613,7 +614,7 @@ const RositaCuisinePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-8">
               Registration
             </h2>
             <div>
@@ -645,7 +646,7 @@ const RositaCuisinePage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-center text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-white mb-6">
               End-to-End <span style={{ color: "#0EDAC6" }}>Screens</span>
             </h2>
             <p className="text-[20px] leading-relaxed text-white/90 text-center max-w-5xl mx-auto mb-10">
@@ -706,7 +707,7 @@ const RositaCuisinePage = () => {
             viewport={{ once: true }}
             className="text-white/90"
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-white text-center mb-6">Usability Testing</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white text-center mb-6">Usability Testing</h2>
             <div className="space-y-6 text-[20px] leading-relaxed">
               <p>
                 Usability testing of the high‑fidelity prototype was conducted to see how users interact with the
@@ -756,7 +757,7 @@ const RositaCuisinePage = () => {
             viewport={{ once: true }}
             className=""
           >
-            <h2 className="text-[36px] md:text-[44px] font-semibold text-white text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white text-center mb-6">
               Major Takeaway from the <span style={{ color: "#0EDAC6" }}>Project</span>
             </h2>
             <div className="text-white/90 text-[20px] leading-relaxed mx-auto space-y-4">
@@ -776,6 +777,7 @@ const RositaCuisinePage = () => {
 
       {/* Footer */}
       <FooterSection />
+      <BackToTopButton />
     </div>
   );
 };
