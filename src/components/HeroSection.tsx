@@ -218,6 +218,7 @@ const HeroSection = () => {
           <p className="text-gray-900 mx-auto text-md font-medium leading-relaxed text-left">
             Abdul's Professional execution elevated our brand experience. Strongly endorsed.
           </p>
+          <p className='text-gray-800 text-md italic mt-2 leading-relaxed text-left'>- Daniel Bolarinwa <span className='text-gray-600 text-sm font-medium leading-relaxed text-left'>CEO, Inside Africa</span></p>
         </motion.div>
       </motion.div>
         </motion.div>
@@ -280,6 +281,8 @@ const HeroSection = () => {
             <p className="text-gray-900 text-lg xl:text-xl font-medium leading-relaxed text-left">
               Abdul's Professional execution elevated our brand experience. Strongly endorsed.
             </p>
+            <p className='text-gray-800 text-md italic mt-2 leading-relaxed text-left'>- Daniel Bolarinwa <span className='text-gray-600 text-sm font-medium leading-relaxed text-left'>CEO, Inside Africa</span></p>
+
           </motion.div>
 
           {/* <div className='flex flex-col md:flex-row items-start gap-4'> */}
