@@ -8,12 +8,12 @@ import BackToTopButton from "@/components/BackToTopButton";
 
 const BaldevProjectPage = () => {
   return (
-    <div className="min-h-screen pt-[120px] md:pt-[150px] bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white">
       {/* Header Navigation */}
       <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
       {/* Hero Section */}
-      <div className="relative min-h-screen overflow-hidden">
+      <div className="relative min-h-screen  pt-[120px] md:pt-[150px] overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image

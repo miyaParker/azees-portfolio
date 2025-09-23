@@ -8,12 +8,12 @@ import BackToTopButton from '@/components/BackToTopButton';
 
 const EasyCommutePage = () => {
   return (
-    <div className="min-h-screen pt-[120px] md:pt-[150px] bg-gray-900 text-white overflow-x-hidden">
+    <div className="min-h-screen  bg-gray-900 text-white overflow-x-hidden">
       {/* Header Navigation */}
       <Navbar variant="dark" isAbsolute={false} currentPage="projects" />
 
       {/* Hero Section */}
-      <div className="relative min-h-screen overflow-hidden">
+      <div className="relative pt-[120px] md:pt-[150px] min-h-screen overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image

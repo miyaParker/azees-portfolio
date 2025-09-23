@@ -28,7 +28,7 @@ const CineTripsPage = () => {
         </div>
 
         {/* Main content */}
-        <div className="w-full min-h-screen max-w-[1513px] mx-auto h-full relative z-10 flex flex-col items-center justify-center">
+        <div className="w-full min-h-screen h-full relative z-10 flex flex-col items-center justify-center">
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -42,7 +42,7 @@ const CineTripsPage = () => {
           </motion.div>
           <div className="w-full mt-auto py-8" style={{ backgroundColor: "#D70A84" }}>
             <div className="w-full mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12  max-w-[1513px] mx-auto px-[20px] md:px-[40px] lg:px-[60px] xl:px-[80px]">
                 {/* Client */}
                 <motion.div
                   className="text-center"
