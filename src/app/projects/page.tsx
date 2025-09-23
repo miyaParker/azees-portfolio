@@ -318,7 +318,7 @@ const PortfolioPage = () => {
 
           {/* Logo Grid */}
           <motion.div 
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 lg:gap-8 max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto"
+            className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-8 max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -353,7 +353,7 @@ const PortfolioPage = () => {
 
           {/* Graphic Showcase Grid */}
           <motion.div 
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 lg:gap-8"
+            className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-8"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}

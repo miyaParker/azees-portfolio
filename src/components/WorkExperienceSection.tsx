@@ -6,7 +6,7 @@ const WorkExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      company: "Baldev Skills Resources, UK.",
+      company: "Wheels Wizard Ltd, Uk.",
       period: "Jan 2023 - Present",
       role: "Lead UI/UX Designer",
       description: "Drove UX strategy and built a scalable design system, cutting delivery time by 35%. Championed accessibility, aligned stakeholders to boost adoption by 30%, and mentored designers to elevate delivery quality",
@@ -14,16 +14,8 @@ const WorkExperienceSection = () => {
     },
     {
       id: 2,
-      company: "CMYK Studios, Nigeria.",
-      period: "Mar 2021 - Sep 2022",
-      role: "Brand & UX Designer",
-      description: "Created brand identities and UI for 50+ clients, driving 60% higher recall and 25% more conversions, while boosting engagement by 45% through data-driven design",
-      isActive: false
-    },
-    {
-      id: 3,
       company: "Egbin Power Plc, Nigeria.",
-      period: "Jun 2018 - Mar 2021",
+      period: "Jun 2017 - Mar 2022",
       role: "UI/UX Designer",
       description: "Redesigned corporate platforms with WCAG-compliant features, boosting adoption by 45%. Built responsive dashboards that cut decision-making time by 25% and aligned stakeholders across IT, HR, and finance",
       isActive: true
@@ -31,7 +23,7 @@ const WorkExperienceSection = () => {
     {
       id: 4,
       company: "Urban Hype Ltd, Nigeria.",
-      period: "Feb 2015 - Jun 2018",
+      period: "Feb 2015 - Jun 2017",
       role: "Design Team Lead",
       description: "Led a 5-person creative team to deliver award-winning campaigns, boosting artist collaborations by 30% and streaming visibility by 25%",
       isActive: false
