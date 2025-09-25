@@ -40,8 +40,7 @@ const ServicesSection = () => {
               // height="h-[400px]"
               delay={0.2}
             >
-              <Image src="/ui:ux.jpg" alt="UI/UX Design" width={1000} height={1000} className="h-full w-full object-cover" />
-             
+             <Image src="/ui:ux.jpg" alt="UI/UX Design" width={1000} height={1000} className="h-full w-full object-cover" />
             </CascadedCard>
 
             {/* Brand Design Card */}

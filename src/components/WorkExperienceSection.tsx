@@ -18,23 +18,23 @@ const WorkExperienceSection = () => {
       period: "Jun 2017 - Mar 2022",
       role: "UI/UX Designer",
       description: "Redesigned corporate platforms with WCAG-compliant features, boosting adoption by 45%. Built responsive dashboards that cut decision-making time by 25% and aligned stakeholders across IT, HR, and finance",
-      isActive: true
+      isActive: false
     },
     {
-      id: 4,
+      id: 3,
       company: "Urban Hype Ltd, Nigeria.",
       period: "Feb 2015 - Jun 2017",
       role: "Design Team Lead",
       description: "Led a 5-person creative team to deliver award-winning campaigns, boosting artist collaborations by 30% and streaming visibility by 25%",
-      isActive: false
+      isActive: true  
     },
     {
-      id: 5,
+      id: 4,
       company: "Freelance",
       period: "Feb 2012 - Apr 2015",
       role: "Brand Designer",
       description: "Delivered custom brand designs, including logos, style guides, and marketing assets, enhancing client market visibility.",
-      isActive: true
+      isActive: false
     }
   ];
 

@@ -114,7 +114,7 @@ const ClientsSection = () => {
             </div>
 
             {/* Row 2: Peeg, Blueberry Apartments */}
-            <div className="relative left-[10%] top-[20px] flex justify-start items-center gap-6">
+            <div className="relative left-[10%] top-[30px] flex justify-start items-center gap-6">
               {clients.slice(4, 6).map((client, index) => (
                 <motion.div
                   key={client.id}
@@ -131,13 +131,13 @@ const ClientsSection = () => {
                   whileHover={{ scale: 1.1 }}
                 >
                   {/* Client Logo Container */}
-                  <div className="relative w-44 h-28 flex items-center justify-center hover:scale-105 transition-all duration-300">
+                  <div className="relative w-38 h-auto flex items-center justify-center hover:scale-105 transition-all duration-300">
                     <Image
                       src={client.logo}
                       alt={`${client.name} logo`}
-                      width={236}
+                      width={256}
                       height={156}
-                      className="max-w-full max-h-full object-contain"
+                      className="max-w-full max-h-full object-cover"
                     />
                   </div>
                 </motion.div>
@@ -145,7 +145,7 @@ const ClientsSection = () => {
             </div>
 
             {/* Row 3: Urban Hype, SKYY Vodka, Abbyz Beauty, Growth Arrow, Luxury by Creme, Olat Events */}
-            <div className="flex justify-center items-center -gap-[90px]">
+            <div className="flex justify-center items-center -gap-[80px]">
               {[clients[11], clients[10], clients[6], clients[7], clients[8], clients[9]].map((client, index) => (
                 <motion.div
                   key={client.id}

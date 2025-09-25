@@ -28,16 +28,15 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <div className="bg-white border-2 border-gray-900 rounded-full px-4 py-2 text-sm font-medium relative text-gray-900">
+            <div className="bg-white border-2 border-gray-900 rounded-full px-4 py-2 text-sm font-medium relative text-gray-900 relative">
               Hello!
-            </div>
-            <motion.svg
+              <motion.svg
               width="32"
               height="33"
               viewBox="0 0 32 33"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="ml-3 w-[20px] h-auto md:w-[28px] lg:w-[32px]"
+              className="ml-3 w-[20px] h-auto md:w-[28px] lg:w-[32px] absolute -top-[50%] left-[80%] sm:-top-[80%] sm:left-[80%]"
               animate={{
                 scale: [1, 1.2, 1],
                 rotate: [0, 5, 0]
@@ -56,6 +55,8 @@ const HeroSection = () => {
                 strokeLinejoin="round"
               />
             </motion.svg>
+            </div>
+           
           </motion.div>
 
           {/* Main Heading */}
@@ -204,7 +205,7 @@ const HeroSection = () => {
             {/* Experience */}
             <div className="">
               <div className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">10 Years+</div>
-              <div className="text-sm text-gray-600">Experience</div>
+              <div className="text-sm text-gray-600 text-center">Experience</div>
             </div>
           </motion.div>
           <motion.div
@@ -317,13 +318,13 @@ const HeroSection = () => {
             {/* Experience */}
             <div className="">
               <div className="text-xl md:text-2xl xl:text-3xl font-bold text-gray-900">10 Years+</div>
-              <div className="text-sm text-gray-600">Experience</div>
+              <div className="text-sm text-gray-600 text-center">Experience</div>
             </div>
           </motion.div>
 
           {/* Right Side - CTA Buttons Container */}
           <motion.div
-            className="bg-gradient-to-r from-gray-500 to-gray-700 rounded-[40px] p-[6px] lg:p-[10px] border border-gray-400 w-max"
+            className="bg-[#FFFFFF]/10 backdrop-blur-sm rounded-[40px] p-[6px] lg:p-[10px] border border-gray-400 w-max"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.6 }}

@@ -160,7 +160,7 @@ const PortfolioPage = () => {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
                 <div className="relative z-10 p-8 h-full flex items-center justify-center">
                   <div className="text-center">
                     <h3 className="text-4xl font-bold text-white mb-4">CineTrips</h3>
@@ -184,7 +184,7 @@ const PortfolioPage = () => {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
                 <div className="relative z-10 p-8 h-full flex items-center justify-center">
                   <div className="text-center">
                     <h3 className="text-3xl font-bold text-white mb-4">Rosita Cuisine</h3>
@@ -211,7 +211,7 @@ const PortfolioPage = () => {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
                 <div className="relative z-10 p-8 h-full flex items-center justify-center">
                   <div className="text-center">
                     <h3 className="text-3xl font-bold text-white mb-4">Baldev</h3>
@@ -235,7 +235,7 @@ const PortfolioPage = () => {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
                 <div className="relative z-10 p-8 h-full flex items-center justify-center">
                   <div className="text-center">
                     <h3 className="text-4xl font-bold text-white mb-4">CheckBox</h3>
@@ -262,7 +262,7 @@ const PortfolioPage = () => {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
                 <div className="relative z-10 p-8 h-full flex items-center justify-center">
                   <div className="text-center">
                     <h3 className="text-4xl font-bold text-white mb-4">Grabby</h3>
@@ -286,11 +286,11 @@ const PortfolioPage = () => {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300"></div>
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
                 <div className="relative z-10 p-8 h-full flex items-center justify-center">
                   <div className="text-center">
                     <h3 className="text-3xl font-bold text-white mb-4">Easy Commute</h3>
-                    <p className="text-white/90">Transportation App</p>
+                    <p className="text-white font-medium">Transportation App</p>
                   </div>
                 </div>
               </motion.a>
@@ -300,7 +300,7 @@ const PortfolioPage = () => {
       </section>
 
       {/* Brand Design Section */}
-      <section className="w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] relative overflow-hidden">
+      <section className="mb-[120px] lg:mb-[150px] w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] relative overflow-hidden">
         <div className="mx-auto relative z-10">
           <motion.div 
             className="text-center mb-16"
@@ -334,9 +334,9 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      {/* Graphic Design Section */}
-      <section className="py-20 px-4 sm:px-8 relative overflow-hidden">
-        <div className="max-w-[1513px] px-[20px] md:px-[40px] lg:px-[80px] mx-auto relative z-10">
+      {/* Graphics Design Section */}
+      <section className="mb-[120px] lg:mb-[150px] w-full max-w-[1513px] mx-auto px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[80px] relative overflow-hidden">
+        <div className="max-w-[1513px] mx-auto relative z-10">
           <motion.div 
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
@@ -345,7 +345,7 @@ const PortfolioPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              Graphic <span className="text-[#03A3CC]">Design</span>
+              Graphics <span className="text-[#03A3CC]">Design</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto">
               Creating visually compelling graphics that communicate your message effectively across all platforms.
