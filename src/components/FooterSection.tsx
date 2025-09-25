@@ -76,6 +76,18 @@ const FooterSection = () => {
                   <path d="M36.6526 3.8078H43.3995L28.6594 20.6548L46 43.5797H32.4225L21.7881 29.6759L9.61989 43.5797H2.86886L18.6349 25.56L2 3.8078H15.9222L25.5348 16.5165L36.6526 3.8078ZM34.2846 39.5414H38.0232L13.8908 7.63406H9.87892L34.2846 39.5414Z" fill="white" />
                 </svg>
               </Link>
+              <Link className="w-[24px] h-[24px] rounded flex items-center justify-center hover:bg-[#03A3CC] transition-colors duration-300" href="https://www.linkedin.com/in/abdulazees-olayinka-msc-98b3b9aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                  <rect width="48" height="48" fill="url(#pattern0_2256_382)" />
+                  <defs>
+                    <pattern id="pattern0_2256_382" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlinkHref="#image0_2256_382" transform="scale(0.0208333)" />
+                    </pattern>
+                    <image id="image0_2256_382" width="48" height="48" preserveAspectRatio="none" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAAXNSR0IB2cksfwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAIdQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////apH/EQAAAC10Uk5TAPj/QP4ZPNMLwb/gRPnKByS6bzOQpHshBdR6CHi3k9v02N0C/QN2YXV04vIxdG5xlwAAAN5JREFUeJzt1skKwjAQBuAZccMNQbBaQcEFqr7/s7gcbEHF6kEQxboGmxS0PVhnBEGLOUxD+n+hCyFBYDYERFYeeXlXxHh5BQQ5HRcRBIkzCyQvLjnSQfoka8ohg8xBXcLeKAiyDhPk9optyQAKO7fkN3QARcR1SPwTf7ok18vyGaisZNUWAN4aEbrt3SjbNKDdp67OScDXBBfoMxqoIU5Vp25RQMN0S9PyP9OLryRLy2SCQJ8E2pM/iBroqM0LRwCGGhmr0e710f+J/eFrgEEGw3dOAtAfcPI95tEE4AYnYLm4Ars0cQAAAABJRU5ErkJggg==" />
+                  </defs>
+                </svg>
+
+              </Link>
             </div>
           </motion.div>
 
